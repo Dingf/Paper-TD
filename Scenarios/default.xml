@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<WorldGameData version="1.0">
+	<WorldGame ID="0" Name="Default">
+		<AssetsLocation>Assets\\</AssetsLocation>
+		<StartingInk>10000000</StartingInk>
+		<StartingMaxInk>10000000</StartingMaxInk>
+		<MaxInkIncrement>50</MaxInkIncrement>
+		<CreepBaseHP>50</CreepBaseHP>
+		<CreepHPScale>1.09318161</CreepHPScale>
+		<CreepArmorScale>1.0</CreepArmorScale>
+		<CreepBountyScale>1.75</CreepBountyScale>
+		<StartingLightCounter>50</StartingLightCounter>
+		<WaveSize>25</WaveSize>
+		<CreepSpawnInterval>250</CreepSpawnInterval>
+		<WaveTimeDifference>30000</WaveTimeDifference>
+		<WavePreload>10</WavePreload>
+		<CanSell>YES</CanSell>
+		<CanUpgrade>YES</CanUpgrade>
+		<SellTimer>1000</SellTimer>
+		<SellTimerIncrement>250</SellTimerIncrement>
+		<Layout>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		</Layout>
+	</WorldGame>
+</WorldGameData>

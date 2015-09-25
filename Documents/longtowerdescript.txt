@@ -1,0 +1,188 @@
+The Wall is the first "tower" in the game. It does not have any form of
+			     attack, but is very cheap, making it the ideal tower to build the bulk of
+			     your defenses with. Since it has no attack, it also cannot be upgraded,
+			     though it may be sold like any other tower.\n\nBranch 1: Learns NYI.
+
+
+The Point Tower is the earliest and cheapest tower that can attack creeps.
+			     Despite this, the Point Tower can prove useful well into the late game;
+			     its first branch, which emphasizes creep control, contains the coveted
+			     Singularity spell among others, which warps all nearby creeps onto a 
+			     spot of your choosing. Not only does it bunch up all of the creeps for
+			     your splash towers, it can also effectively increase the distance that
+			     creeps must travel before escaping. Its prerequisite, Blink, is also very 
+			     useful for catching any creeps that might escape, especially since the 
+			     Point Blank passive spell doubles its damage versus closer creeps.
+			     Alternatively, the Point Tower can become a veritable shotgun with its
+			     second branch, as both of its initial spells grant it the ability to
+			     fire numerous times. When combined with its final spell, Piercing Shell,
+			     the Point Tower has the potential to become one of the heaviest armor
+			     reducing towers in the game.\n\nBranch 1: Learns Particle Accelerator, 
+			     Point Blank, Blink, Singularity.\n\nBranch 2: Learns Multi-Cannon, 
+			     Recoil Rounds, Bulletstorm Aura, Piercing Shells.
+
+
+The Water Tower is the first true splash tower, though it can also serve
+			     as a single-target tower as well. The splash damage, found primarily in
+			     the Water Tower's first branch, is one of the most efficient in the game
+			     due to Puddle; not only does the initial explosion deal splash, but it
+			     also leaves a puddle of water that damages creeps that walk on it, With
+			     Coagulant, Puddles also gain the ability to slow creeps, allowing the
+			     Water Tower to serve as a rudimentary crowd control tower. Whereas the
+			     second branch of the Point Tower is like a shotgun, the second branch of
+			     the Water Tower is most similar to a machinegun - Hydraulic Nozzle
+			     reduces the attack delay of the Water Tower to 0.1 seconds, but also
+			     gives a large reduction to damage that decreases as the tower levels up.
+			     Because of this, it is often a good idea to use this type of Water Tower
+			     with an armor reducing tower or in conjunction with its Drench ability,
+			     which has a low cooldown and reduces creep armor at the same time.\n
+			     \nBranch 1: Learns Puddle, Splash Aura, Coagulant, Deep Blue.\n\nBranch 2:
+			     Learns Hydraulic Nozzle, Drench, Pressure Valve, Osmosis.
+
+Like the Water Tower before it, the Clock Tower is a hybrid between a
+			     splash tower and a single-target tower, though it tends to scale better
+			     than its counterpart. With three spells in its first branch that can stun
+			     creeps, the single-target component of the Clock Tower is also a very 
+			     effective crowd control tower. Chronosphere, in particular, has the ability 
+			     to stop entire waves of creeps at a time, making it useful at any stage
+			     of the game. Since it also stops projectiles as well, it is often a good 
+			     idea to use Chronosphere with Eraser Towers or towers like Storm Towers 
+			     that don't focus on projectile damage. The second branch of the Clock
+			     Tower revolves around Chime, which appears to be just a typical AoE spell
+			     that scales well due to its percent damage. However, the two passives
+			     that follow it, Deafen and Repercussion, both activate whenever the tower
+			     deals other damage, and both deal percent damage as well, allowing the 
+			     tower to effectively dispatch even higher level creeps. Since Deafen and 
+			     Repercussion are not limited by the type of damage done, it is possible
+			     to create a hybrid Clock Tower with Time Lapse and these two passives,
+			     though it would lack either of its very powerful final spells.\n\nBranch 
+			     1: Learns Time Lapse, Pause, Alacrity Aura, and Chronosphere.\n\nBranch 
+			     2: Learns Chime, Deafen, Repercussion, and Sonic Boom.
+
+The Storm Tower is a deceptively powerful mid-game tower that can deal
+			     quite a bit of both single-target and splash damage, albeit indirectly.
+			     One of the more unique branches in the game, the Storm Tower's first
+			     branch revolves entirely around cooldown-based damaging spells. These
+			     spells, the first three in the branch, are all quite similar - they deal
+			     high damage with a relatively low cooldown. The final spell in the branch,
+			     Squall Winds, doesn't deal any actual damage, but vastly improves the
+			     Storm Tower's damage by reducing all cooldowns by 6 seconds. On some
+			     spells, the cooldown decreases to merely a few seconds, possibly even
+			     less when combined with Alacrity Aura from a Clock Tower. Perhaps just
+			     as unusual, the second branch of the Storm Tower focuses on increasing
+			     creep armor. Every creep that is hit by Cold Wave gains armor at the cost
+			     of reduced speed, up to a maximum of 90% reduced speed at +90 armor,
+			     though there is no limit to the amount of armor granted by Cold Wave.
+			     Once the Storm Tower acquires Frostbite however, the extra armor suddenly
+			     turns against them, as Frostbite deals vastly improved damage over time
+			     to highly armored targets. Combined with the slowing effect of Cold Wave,
+			     the Storm Tower can become a very lethal force by itself, though other
+			     towers, especially ones like Eraser Towers that ignore armor, should be
+			     used to maximize damage done.\n\nBranch 1: Learns Searing Bolt, Ionic
+			     Storm, Headwind, and Squall Winds.\n\nBranch 2: Learns Cold Wave, 
+			     Freezing Aura, Frostbite, Cryonimbus.
+
+The Eraser Tower is a rather unusual hybrid between a support tower and
+			     a damage tower; the tower itself cannot fire projectiles. Instead, the
+			     damaging branch of the Eraser Tower deals damage to any creeps that are
+			     foolish enough to walk over it. Expunge is an incredibly damaging spell
+		 	     given its low requirements, but is also notoriously hard to use properly
+			     due to its cast time and small area. When combined with Smudge however,
+		 	     which deals a large amount of splash damage in a small radius whenever 
+			     a creep is killed by the Eraser Tower, the Eraser Tower can form a chain 
+			     of death that can wipe out an entire wave, especially if the creeps are 
+			     close together such as through the effect of Singularity. Creeps that 
+			     manage to survive such an onslaught leave only to take extra damage from
+			     other towers due to the Eraser Tower's Indelibility spell. Alternatively,
+			     the Eraser Tower can become a powerful support tower, boasting an unrivaled
+			     three auras out of the four spells it possesses that range from increasing
+			     damage to reducing upgrade time. The remaining spell, Cleanse, is just
+			     as important as the auras however, if not more so - it removes all armor,
+			     immunities, and active effects from nearby creeps. In the late game, it
+			     becomes somewhat of a requisite if there are many splash towers or fast
+			     but weak towers like the Water Tower, but keep in mind that the converse
+			     also holds true - beneficial effects from spells like Cold Wave or Piercing
+			     Rounds are also removed.\n\nBranch 1: Learns Fade, Expunge, Smudge,
+			     Indelibility.\n\nBranch 2: Learns Efficiency Aura, Elastic Aura, Cleanse,
+			     Purifier Aura.
+
+As the first of the higher tier towers, the Mirror Tower is a versatile
+			     damage tower that can deal damage to either one or many creeps at the
+			     same time. In terms of single-target damage, the Mirror Tower is nearly
+			     unparalleled. Its primary form of damage, Solarbeam, starts out weak but
+			     gains damage with every passing second. At the highest levels, Solarbeam
+			     can easily deal thousands of damage per second after only a few seconds
+			     of charging. Unfortunate creeps that happen to die to the tower also 
+			     burst into flames with Ignite, inflicting damage over time to other
+			     creeps in the area. In addition to its powerful single-target damage,
+			     this branch of the Mirror Tower also possesses Radiance Aura, arguably
+			     the best offensive aura in the game, which causes every nearby tower,
+			     even Walls, to inflict damage over time to nearby creeps. The splash
+			     damage from the second branch is less striking, and could even be called
+			     mediocre. However, it is relatively fast, and has an advantage over other
+			     splash damage - the "splash" damage from Reflection isn't actually splash
+			     damage, though it does damage multiple creeps at once. With Polarize,
+			     it also ignores up to all of a creep's armor, making it quite effective
+			     against highly armored creeps. The branch's one triggered spell, Lens
+			     Flare, has the potential to be incredibly powerful, with huge damage and
+			     a maximum 3 second stun, but requires good timing to maximize its power.
+			     And finally, not to be outdone, this branch of the Mirror Tower also has
+			     Brilliance Aura, which causes all nearby towers to generate a small amount
+			     of ink per second. While it may not be entirely sustainable, it certainly
+			     helps, especially when built early.\n\nBranch 1: Learns Solarbeam, Ignire,
+			     Radiance Aura, Fahrenheit 451.\n\nBranch 2: Learns Reflection, Polarize,
+			     Lens Flare, and Brilliance Aura.
+
+The Night Tower is a tower of extremes; it can either deal large amounts
+			     of damage to a single target, or fair damage to every creep on the field.
+			     The tower's first branch has a strong affinity towards damage over time,
+			     as reflected by its "bread and butter" skill, Cloak and Dagger. When the
+			     tower is directly behind an creep however, the damage dealt by Cloak and
+			     Dagger is instant, and in most cases quite large. As such, strategically
+			     placed Night Towers can deal fairly ridiculous amounts of single-target
+			     projectile damage, especially since they gain bonus damage for each tower
+			     next to them via Cover of Darkness. Its final spell, Assassinate, allows
+			     the Night Tower to instantly kill almost any single creep, though the 
+			     damage dealt is mitigated by armor. The Night Tower's second branch is
+			     more reminiscent of the old Inkwave Towers, with its Blackout spell. 
+			     When cast, Blackout deals damage to every creep on the field, except for
+			     those that are splash immune.  Upon learning Grand Convergence, the Night 
+			     Tower essentially becomes a bomb, for whenever it is upgraded afterwards, 
+			     it deals massive global damage and stuns all creeps on the field. Another
+			     must for late-game play with weak towers, Black Omen absorbs all damage
+			     dealt to creeps, only to deal the total back to them several seconds 
+			     later. Besides the damage bonus on the highest level of Black Omen, it
+			     also allows the weaker towers to bypass creep armor, greatly boosting
+			     their damage on later waves. Arguably however, the main attraction of 
+			     this branch is its final spell, Total Eclipse, which deals half of every
+			     creep's maximum health as damage over 5 seconds. Such is the power of
+			     the eclipse that other towers cannot even fire, though active effects
+			     like Cloak and Dagger or damage areas like the Eraser Tower's Fade will 
+			     still work.\n\nBranch 1: Learns Cloak and Dagger, Nightshade, Cover of
+			     Darkness, Assassinate.\n\nBranch 2: Learns Blackout, Grand Convergence,
+			     Black Omen, Total Eclipse.
+
+The Void Tower focuses entirely on manipulating the maximum health of
+			     creeps. Because the two branches work oppositely, it is recommended to
+			     only have one type of Void Tower at any given time. The first branch,
+			     which decreases maximum health, works more like a traditional tower;
+			     every hit that lowers maximum health below current health also lowers
+			     current health as well. If the creep's maximum health falls too low
+			     below its original maximum health, Vanish instantly kills it, though it
+			     must be hit by a Void Tower with Vanish first. Unlike its counterpart,
+			     the final spell of this branch, Decimate, is not very spectacular. To
+			     make up for this, it has a very short cooldown, allowing for use with
+			     almost every wave. In contrast to the first, the second branch cannot
+			     deal any direct damage. Instead, every hit while Phantom Life is active
+			     grants additional maximum health to an enemy. Though the amounts are
+			     fairly large, they gain no bonus whatsoever from damage increasing effects,
+			     and may lose their edge in the very late game. Besides helping towers
+			     that deal percent damage, such as the Clock Tower, this increase in life
+			     also increases the damage done by Memento Mori, which is based on the
+			     difference between current health and maximum health. However, Memento
+			     Mori can never kill an enemy, leaving it at a minimum of 1 health. When
+			     using it, it is often a good idea to cast the final spell of the branch,
+			     Borrowed Time, first, as it gives a massive boost to the maximum health
+			     of all creeps.\n\nBranch 1: Learns Health Void, Spectral Hit, Vanish,
+			     Decimate.\n\nBranch 2: Learns Phantom Life, Recklessness, Memento Mori,
+			     Borrowed Time.

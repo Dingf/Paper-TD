@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<GUIData version="1.0">
+	<GUIScript ID="0" Name="Draw Background">
+		<Script>MAKE ANIMATION 61 (MAKE POINT2D 0 0);
+		</Script>
+	</GUIScript>
+	<GUIScript ID="1" Name="Draw Inkbar">
+		<Script>MAKE ANIMATION 62 (MAKE POINT2D 0 0);
+		</Script>
+	</GUIScript>
+	<GUIScript ID="2" Name="Draw Creeps">
+		<Script>MAKE ANIMATION 63 (MAKE POINT2D 0 0);
+		</Script>
+	</GUIScript>
+	<GUIScript ID="3" Name="Draw Towers">
+		<Script>MAKE ANIMATION 64 (MAKE POINT2D 0 0);
+		</Script>
+	</GUIScript>
+	<GUIScript ID="4" Name="Draw Wave Clock">
+		<Script>MAKE ANIMATION 65 (MAKE POINT2D 0 0);
+		</Script>
+	</GUIScript>
+	<GUIScript ID="5" Name="Draw Wave Forecast">
+		<Script>MAKE ANIMATION 66 (MAKE POINT2D 0 0);
+		</Script>
+	</GUIScript>
+	<GUIScript ID="6" Name="Draw GUI Towers">
+		<Script>MAKE ANIMATION 67 (MAKE POINT2D 0 0);
+		</Script>
+	</GUIScript>
+</GUIData>

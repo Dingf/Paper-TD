@@ -1,0 +1,358 @@
+Wall
+
+Watch Tower (T EBFG, CRTD) (ST)
+
+50, (75 75), (100 175), (150 225), (500 350)
+0,  (3   3), (4   5.5), (6    7.5), (18   10)
+
+Scatter Shot - 50% damage reduction, 200% attack speed
+
+Branch 1: Single-target damage/Creep manipulation
+Snipe - Increases particle speed by 150/300/500/infinite and grants a 25/50/75/100%
+			chance to phase through the enemy, dealing linear splash damage.
+Point Blank - Enemies within 64/96/128px take double damage from this tower.
+Fletch - This tower's range is increased by 50/100% of this tower's damage
+Gigashot - This tower inflicts 1000% damage. 10 second cooldown
+
+
+Branch 2: Fast single target damage that can greatly reduce armor with Piercing Shell.
+Chain Shot - Fires 2/3/4/5 projectiles each time the tower fires, but decreases damage done by 50/40/30/20%.
+Reload - Allows the tower to fire twice. 5/4/3 second cooldown. 
+Tweak Weapon - This tower's attack speed becomes 1/10th of its current for 5/8 sec. 1 min. cooldown
+Piercing Rounds - -1 armor to enemy for 3s.
+
+
+Water Tower (F TEDF CRVB) (ST/Splash)
+
+150, (225 175), (250 200), (350 325),  (400 450)
+0,   (4   3.5),	(6    4.5), (10  9),  (12.5   16)
+
+Fluidity - Every time this tower fires, it gains -25 to 50% increased damage.
+
+Branch 1: Moderately slow AoE tower that focuses on splash
+Inkpool - Leaves a puddle of water for 2 sec, dealing a maximum of 100/200/300/400 damage per second, based on
+        how long the stain has existed. 
+Overflow - Releases ink around the tower that does area damage per second. During that time, this
+	   tower cannot fire.
+Drenching Aura - All projectile splash is increased by 50/100% for towers within 128px 
+Flashflood - All creeps take 1% max. HP damage for every creep on the field.
+
+
+Branch 2: Very fast single target damage with a fast nuke.
+Steam Cannon - Fires projectiles every 0.1s dealing 8/12/16/20% damage.
+Rupture - Every projectile from this tower has a 1/2/3% chance to inflict an extra 82/157/319 damage
+Vaporize - This tower ignores 50/100% of creep armor
+Boiling Point - Each hit deals +25 damage
+
+
+
+Clock Tower (D TERC VGFB) (Spell/Splash) EBX
+
+400, (300 325),  (400 375), (400 400),  (450 450)
+0,   (6  6.5), (12   9), (12.5  16), (20   20)
+
+Deafen - When this tower fires, nearby creeps in 96px suffer 472 damage over 0.5 seconds
+
+Branch 1: AoE Shock Tower style support tower with stunning abilities
+Stasis - Selected enemy is stunned for 1/2/3 seconds
+Celerity - Creeps and projectiles within 96px move faster and towers fire faster
+Time Restraint - Creeps and projectiles within 96px move slower and towers fire slower
+Chronosphere - Just like in DotA
+
+Branch 2: Percent damage based tower that does frontal cone aoe damage
+Shockwave - Each hit stuns for 0.1/0.15/0.2/0.25 seconds and deals normal damage within 64px
+Ground Collapse -  Whenever this tower deals damage, all enemies within X px take damage equal to 5/10/15% of their current health.
+Fault Line - Reduces this tower's attack delay by 0.1-0.5/0.2-0.8 seconds on every attack
+Worldbreaker - Stuns every creep by 0.1 sec. when this tower attacks
+
+
+Storm Tower (D BDTV GZEF) (Spell/ST)
+Updraft - Deals anywhere from 1 to 637 + normal damage to a single target
+
+500, (400 350), (500  500), (550 600), (700 650)
+0,   (9,  7.5), (14,   15), (19   21), (30   27.5)
+
+Branch 1: Focus on trigger spells that deal large amounts of damage.
+Lightning Bolt - Deals 116/208/410/867 + normal damage in a line from the tower. 5 second cooldown.
+Discharge - Deals 910/1263/1872 + normal damage every second for 4 seconds in a targeted area with 32px radius. 10 second cooldown.
+Turbulence - Instantly deals 3531/5964 + normal damage in a targeted area within 32px. 30 second cooldown
+Letum Ventus - Whenever this tower kills a creep, all of its cooldowns are reduced by 1 sec.
+
+Branch 2: Fixed AoE damage tower (like Shock tower) that deals more damage to heavily armored enemies with Frostbite.
+Glacial Spike - Passes through enemies, granting 1/2/3/4 armor but slows speed by 1%.
+Blizzard - Deals a maximum of 693/856/1111 damage per second and slows nearby creeps by 1% for every
+	   4/3/2 armor that they have. Lasts 10 seconds. Both effects increase with time until 5 seconds, and then stay steady
+	    until 10s are up.
+Frostbite - Enemies within 32/64px of this tower take 25/50 damage per second plus 5/10x their armor value.
+Fimbulwinter - Freezes all enemies on the page for 30 seconds, but grants 100 armor to them
+
+
+Eraser Tower (DETB FCRV) (Spell)
+Fade - Allows enemies to walk over
+
+350, (125 450) (225 575) (475 900) (500 650)
+0,   (8   12)  (10   28) (16   40) (18.5   20)
+
+Branch 1: Allows enemies to walk over, dealing damage/manipulating bounty
+Drag Down - All nearby creeps within 96px suffer 5/8/12/18% current HP damage per second.
+Soul Eraser - Instantly kills a selected creep if that creep has less than 5/10/15% maximum HP.
+Memento Mori - Inflicts 25/50% of the difference between current and maximum HP to all creeps on the
+	       page. If this spell would kill, the creep is at 1 HP instead.
+Faustian Bargain - Every enemy on the field gains 100000 max HP, but loses 2000 max HP per sec over 1 min. 1 charge
+
+
+Branch 2: Support tower that boosts the abilities of other towers
+Flexibility Aura - All towers within 128px gain +20/30/40/50% range
+Friction Aura - All towers within 128px range get +10/20/50 flat damage. Does not stack.
+Purifier Aura - Grants towers within 128px a 25/50% increase in damage.
+Whiteout - Removes all speed bonuses, immunities, armor, and active effects from enemies within a 64px range.
+
+
+
+Sun Tower (R BRFX CDTE) (Spell/ST)
+
+800, (750 600) (825 750) (950  1000) (1200 1200)
+0,   (12.5   10) (18   15.5) (25     40) (37.5     40)
+
+Redemption - The selected creep's bounty is inversed. i.e. kill gives negative ink, going free gives
+	     positive ink. 1 charge.
+
+//For Solarbeam, use an invisible projectile that creates the "beam" upon explosion
+Branch 1: Single-target beam damage that grows over time
+Solarbeam - Focuses a beam of light on the target enemy, dealing normal damage to the first creep that it
+	    hits. Each time this happens, this tower gains +1/2/3/4 damage.
+Prominence - Increases this tower's damage by 100/200/300 for 10 seconds.
+Inner Flame - +1/2 damage per creep kill
+Lux Lucis - Permanently increases the Light counter by 1 and increases this tower's damage by 50% of
+	    the Light Counter. Light counter starts at 50, and ranges from
+	    0 to 100. At Light counter 50, damage dealt is 100% and creep bounty is 100%. At Light counter
+	    0, damage dealt is 50% and creep bounty is 200%. At Light counter 100, damage dealt is 200%
+	    and creep bounty is 50%. Damage bonus only affects projectile damage.
+
+Branch 2: Support/Damage tower
+Prophecy of Light - Whenever this tower is upgraded, all towers on the page gain 25% increased damage
+		    for 2/3/4/5 sec.
+Smite - Inflicts 2/3/5% of the net damage on the page to a selected creep.
+Transcendence - Increases the damage of every tower on the page by 100/200% for 30 sec.
+Apotheosis - The selected tower gains 2500% damage for 30 seconds.
+
+
+
+Night Tower (G BCRX TGDE) (Spell/ST)
+
+800, (700 600), (825 750) (1000 950) (1200 1200)
+0,   (12   10), (18   16) (30    27.5) (37.5     40)
+
+Stigmata - The selected creep inflicts 250 damage per second to all creeps around it, including itself, until
+	   it dies. 1 charge
+
+Branch 1: Large DoT damage/instant damage
+Blind Spot - Each hit deals 314/566/1051/2039 + normal damage. If the tower is directly behind 
+	     the enemy, the damage dealt is 2/3/5/10x this amount.
+Cover of Night - Gains 3/5/10% increased damage for each tower surrouding this one.
+Premeditation - This tower gains +250/400 damage for every second since it has last attacked
+Nox Noctis - Permanently decreases the Light counter by 1 and increases this tower's damage by 50% of
+	     the negative Light Counter. Light counter starts at 50, and ranges from
+	     0 to 100. At Light counter 50, damage dealt is 100% and creep bounty is 100%. At Light counter
+	     0, damage dealt is 50% and creep bounty is 200%. At Light counter 100, damage dealt is 200%
+	     and creep bounty is 50%. Damage bonus only affects projectile damage.
+
+Branch 2: Chain Spells
+Life Tap - Grants +1/2/3/4 ink for each enemy that is on the targeted location. 30 sec. cooldown
+Amplify Damage - Increases the damage taken by each enemy on the targeted location by 100%
+		 for 5 seconds. 40/50/60 sec. cooldown. Only useable while Life Tap is on cooldown.
+Decrepify - Slows each enemy on the targeted location by 50% for 10/20 seconds. 60/90 second cooldown. 
+	    Only useable when Amplify Damage is on cooldown. 
+Corpse Explosion - Instantly kills the target and deals 70-120% of its maximum HP as splash damage within
+		   32px. Only usable while Decrepify is on cooldown. 15 second cooldown.
+
+
+
+Chaos Tower (E CFED TBRG) (Spell)
+
+1000 (800 925) (1100 1050) (1650 1550) (2000 2000)
+0    (15   18) (22     21) (34     32) (45 45)
+
+Upheaval - When this tower is upgraded, all creeps take 1-9999 damage and are stunned for 1.5 seconds
+
+Branch 1: Random effects
+Spellsnatch - Replaces this spell with a random known spell from a selected tower that is the same or
+	      lower level as this spell.
+Feedback - Whenever this tower casts a spell, nearby creeps suffer 15/20/30% of their current HP as
+	   damage
+Mirage - Creates a duplicate tower of this one that lasts for 30 sec/1 min.
+Wonder - Randomly casts up to 5 spells.
+
+
+Branch 2: Moderately slow AoE tower that increases maximum HP so it and other towers can deal increased % damage.
+Teleport - Teleports the tower to a selected square. 5/3min cooldown.
+Banish - Removes a single creep from the game. 30/20/10 sec. cooldown
+Repel - Pushes all nearby enemies within 96px by 200/300px.
+Singularity - Teleports all enemies within 128px to the selected area.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+- Whenever a nearby creep dies, it inflicts damage to nearby creeps
+
+Faustian Bargain - Prevents the learning of every other spell
+
+Death - Whenever a nearby creep dies, all creeps suffer X damage
+Misery - Whenever a creep is hit, its armor is reduced by X
+Shadow - Whenever a creep dies, it gives X more bounty
+Blood - Whenever a creep suffers damage, that creep suffers X more damage
+
+Curses:
+Plague (BMM) - Nearby creeps lose 10% of their maximum HP per sec.
+
+
+
+
+
+Wonder Spells:
+------------------------------------------
+Singularity
+Overflow
+Flashflood
+Rupture
+
+Stasis
+Wax
+Wane
+Chronosphere
+
+Lightning Bolt
+Sandstorm
+Turbulence
+Letum Ventus
+
+Blizzard
+Give and Take
+Summary Execution
+Whiteout
+
+Redemption
+Theurgy
+Truefaith
+Apotheosis
+
+Stigmata
+Life Tap
+Amplify Damage
+Decrepify
+Corpse Explosion
+
+Double or Nothing
+Martyrdom
+Sunder Hope
+Memento Mori
+Borrowed Time
+
+Mass Polymorph - Turns all creeps into random other creeps (aesthetics only)
+
+
+
+
+
+The Seven - Selects one of 14 random spells and learns them. Virtues give +1 Light Counter, vices -1.
+	(357)+Lust - Whenever this tower kills a creep, it instantly fires again. 5/3/2/0 sec. cooldown.
+	(361)+Gluttony - Whenever this tower kills a creep, it gains +1/2/3/4 damage
+	(365)+Greed - Creeps killed by this tower give +50/75/100/150% bounty
+	(369)-Sloth - This tower's attack speed is slowed by 30/25/20/15%.
+	(373)+Wrath - This tower's damage is increased by 100/200/300/400
+	(377)-Envy - If there is a higher level tower adjacent to this tower, this tower loses 50/25/15% damage.
+	(381)+Pride - If this is the highest level tower among its adjacents, it gains +50/100/150/200% damage
+
+	(385)-Chastity - If this tower kills a creep, it cannot attack again for 8/6/4/3 seconds
+	(389)-Temperance - This tower cannot inflict more than 300/400/500/600 damage
+	(393)-Charity - Creeps killed by this tower give -75/65/55/50% bounty
+	(397)+Diligence - This tower's attack speed is fixed at 2.0/1.5/1.2/1.0 seconds.
+	(401)+Patience - This tower gets +25/50/75/100 damage for every second it does not attack
+	(405)-Kindness - This tower's damage is reduced by 50/45/40/35%. 
+	(409)+Humility - If this tower is the lowest level tower among its adjacents, adjacent towers get
+		   a +25/50/75% damage bonus
+
+
+
+
+
+Scales of Grey - This tower gains +100/200/300% damage when the Light Counter is at 50
+
+
+Misfortune Aura - 
+Crossroads of Destiny - Learns one of two possible spells
+			Path of Light - Light Counter +1. Adds 100-150/250/400% max. HP to a creep
+			Path of Darkness - Light Counter -1. Inflicts 1-80/100/150% max. HP damage to a creep
+Double or Nothing - 50/75% chance to cause all creeps on the page to take double damage for 10 seconds.
+		    If it fails, then all creeps on the page become invulnerable for 10 seconds.
+
+
+Blackout - Each hit deals 100/115/130/150% normal damage to every enemy on the field.
+Grand Convergence - When this tower is upgraded again, it deals 1000/2000% damage to all enemies and stuns them for 3/5 seconds.
+Black Omen - All damage taken by enemies within 128px is absorbed for 5 seconds. After 5 seconds, 100/125% of the damage absorbed is dealt to the enemy.
+Total Eclipse - All towers are unable to fire, but all enemies lose current HP equal to 10% of their current maximum HP per second for 5 seconds. 2 min 
+                cooldown.
+
+
+
+
+
+Elasticity Aura - Towers within 128px range gain a 10/15/20/30% increase in range. Also makes this 
+		  tower invisible. 
+
+Fade - Selected enemy takes 10/15/20% more damage for 10 seconds.
+Absorption - Enemies killed by the Eraser Tower while in Eraser Trap mode grant 25/35% more ink.
+Vulcanize - All enemies on the Eraser Tower take 50% max HP damage after 1.5 seconds of charging.
+
+Branch 2: Helps other towers kill creeps
+Whiteout - Instantly kills all enemies within 64px but grants neither ink nor score. 10/9/7.5/5 min cooldown.
+Efficiency Aura - Grants towers within 128px 30/40/50% faster upgrades
+Cleanse - Removes all immunities from enemies within 128/256px range.
+Purifier Aura - Grants towers within 128px a 10% increase in damage.
+
+Osmosis - Drains life from all enemies within 128px based on how much ink you have ((100 - percentage)/2)
+
+
+Branch 2: Upgrades and "de-upgrades" to do damage.
+Detonate - Reduces this tower's level by 1 and activates the effect of the last spell used. 15/10/5/0 second cooldown.
+Detonate Spells: These can be used to upgrade anywhere from LV3-5
+0.7mm Lead - Deals 518/823/1361 damage 
+
+
+Black Omen - Curses a selected creep on the page, causing it to take 100% more damage for 3/5/8/12
+	     seconds. If the creep dies while under this effect, this tower shares the kill credit.
+
+
+Reflection - Beams from the Mirror Tower bounce and hit 2/3/4/5 different enemies within 128px.
+
+Lens Flare - Charges a beam of light for up to 6 seconds. Damage increases by 1290/2291 per second up to 3 seconds, and stun increases by 1 second
+             per second up to 3 seconds. After 3 seconds, these bonuses decrease by the same amount. Triggered spell. 30s cooldown. 
+Mirage - Creates an illusionary tower at a location that has Reflection Lv5 and deals half damage to creeps.
+
+//Also have spell that "mirrors" the movement of the projectile relative to the tower?
+
+
+Enemy Territory - Enemies that walk over this tower take damage
+Ransom Lord - Creeps that are on this tower grant 100/200/300% bounty while they are on it.
+Feedback - Inflicts 1/2% damage per point of ink on a selected creep's bounty.
+Summary Execution - Kills the creep with the highest HP on the field and gives 10x its bounty.
+
+Fervor Aura - Increases the attack speeds of nearby towers by -10/-15/-25/-40%
+Truefaith - Redeems 50/75/100% of all current creeps on the field.
+
+
+
+Stygian Holywater
+
+

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+<ProjectileData version="1.0">
+	<Projectile ID="0" Name="Null">
+		<Speed>0</Speed>
+		<SplashRadius>0</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>NONE</AnimationID>
+		<ExplosionID>NONE</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+	<Projectile ID="1" Name="Point">
+		<Speed>250</Speed>
+		<SplashRadius>0</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>1</AnimationID>
+		<ExplosionID>2</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+	<Projectile ID="2" Name="Drop">
+		<Speed>200</Speed>
+		<SplashRadius>32</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>6</AnimationID>
+		<ExplosionID>7</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+	<Projectile ID="3" Name="Steam">
+		<Speed>400</Speed>
+		<SplashRadius>0</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>13</AnimationID>
+		<ExplosionID>14</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+	<Projectile ID="4" Name="Shockwave">
+		<Speed>0</Speed>
+		<SplashRadius>96</SplashRadius>
+		<Duration>1</Duration>
+		<AnimationID>0</AnimationID>
+		<ExplosionID>15</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+	<Projectile ID="5" Name="Glacial Spike">
+		<Speed>100</Speed>
+		<SplashRadius>0</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>31</AnimationID>
+		<ExplosionID>33</ExplosionID>
+		<Flags>5</Flags>
+	</Projectile>
+	<Projectile ID="6" Name="Solarbeam Lv2">
+		<Speed>10000</Speed>
+		<SplashRadius>0</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>0</AnimationID>
+		<ExplosionID>48</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+	<Projectile ID="7" Name="Solarbeam Lv3">
+		<Speed>10000</Speed>
+		<SplashRadius>8</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>0</AnimationID>
+		<ExplosionID>50</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+	<Projectile ID="8" Name="Solarbeam Lv4">
+		<Speed>10000</Speed>
+		<SplashRadius>16</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>0</AnimationID>
+		<ExplosionID>52</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+	<Projectile ID="9" Name="Solarbeam Lv5">
+		<Speed>10000</Speed>
+		<SplashRadius>24</SplashRadius>
+		<Duration>NONE</Duration>
+		<AnimationID>0</AnimationID>
+		<ExplosionID>54</ExplosionID>
+		<Flags>0</Flags>
+	</Projectile>
+</ProjectileData>

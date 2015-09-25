@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+
+<GameObjectData version="1.0">
+	<GameObject ID="0" Name="NULL">
+		<Type>NONE</Type>
+		<Values></Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script></Script>
+	</GameObject>
+	<GameObject ID="1" Name="Inkpool Lv2">
+		<Type>RECT</Type>
+		<Values>0 0 64 64</Values>
+		<Duration>2500</Duration>
+		<Animation>8</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			MAKE VARIABLE ELAPSEDTIME = ((GET GAME_TIME) - (GET GOBJECT_START_TIME SELF));
+			DAMAGE_AREA CREEP_HITPOINTS ((379 + ((GET DAMAGE SELECTION) * 0.35)) * (1.0 - (ELAPSEDTIME / (GET GOBJECT_DURATION SELECTION)))) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="2" Name="Inkpool Lv3">
+		<Type>RECT</Type>
+		<Values>0 0 64 64</Values>
+		<Duration>2500</Duration>
+		<Animation>8</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			MAKE VARIABLE ELAPSEDTIME = ((GET GAME_TIME) - (GET GOBJECT_START_TIME SELF));
+			DAMAGE_AREA CREEP_HITPOINTS ((762 +((GET DAMAGE SELECTION) * 0.35)) * (1.0 - (ELAPSEDTIME / (GET GOBJECT_DURATION SELECTION)))) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="3" Name="Inkpool Lv4">
+		<Type>RECT</Type>
+		<Values>0 0 64 64</Values>
+		<Duration>2500</Duration>
+		<Animation>8</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			MAKE VARIABLE ELAPSEDTIME = ((GET GAME_TIME) - (GET GOBJECT_START_TIME SELF));
+			DAMAGE_AREA CREEP_HITPOINTS ((1590 + ((GET DAMAGE SELECTION) * 0.35)) * (1.0 - (ELAPSEDTIME / (GET GOBJECT_DURATION SELECTION)))) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="4" Name="Inkpool Lv5">
+		<Type>RECT</Type>
+		<Values>0 0 64 64</Values>
+		<Duration>2500</Duration>
+		<Animation>8</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			MAKE VARIABLE ELAPSEDTIME = ((GET GAME_TIME) - (GET GOBJECT_START_TIME SELF));
+			DAMAGE_AREA CREEP_HITPOINTS ((3395 + ((GET DAMAGE SELECTION) * 0.35)) * (1.0 - (ELAPSEDTIME / (GET GOBJECT_DURATION SELECTION)))) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="5" Name="Overflow Lv3">
+		<Type>CIRCLE</Type>
+		<Values>0 0 1</Values>
+		<Duration>10000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>EVERY 100 (MAKE GAME_OBJECT 2 (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + (RAND -48 16)) ((GET POSITION SOURCE Y_VAL) + (RAND -48 16))) SELF);
+		</Script>
+	</GameObject>
+	<GameObject ID="6" Name="Overflow Lv4">
+		<Type>CIRCLE</Type>
+		<Values>0 0 1</Values>
+		<Duration>12000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>EVERY 100 (MAKE GAME_OBJECT 3 (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + (RAND -48 16)) ((GET POSITION SOURCE Y_VAL) + (RAND -48 16))) SELF);
+		</Script>
+	</GameObject>
+	<GameObject ID="7" Name="Overflow Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 1</Values>
+		<Duration>15000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>EVERY 100 (MAKE GAME_OBJECT 4 (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + (RAND -48 16)) ((GET POSITION SOURCE Y_VAL) + (RAND -48 16))) SELF);
+		</Script>
+	</GameObject>
+	<GameObject ID="8" Name="Flashflood Surface">
+		<Type>RECT</Type>
+		<Values>0 0 572 572</Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script></Script>
+	</GameObject>
+	<GameObject ID="9" Name="Point Surface">
+		<Type>CIRCLE</Type>
+		<Values>0 0 1</Values>
+		<Duration>NONE</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script></Script>
+	</GameObject>
+	<GameObject ID="10" Name="Deafen DoT">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>1000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (172 + ((GET DAMAGE SELECTION) * 0.4)) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="11" Name="Celerity Lv3">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>30000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA TOWERS 126;
+			SPELL_AREA PROJECTILES 127;
+			SPELL_AREA CREEPS 128;
+		</Script>
+	</GameObject>
+	<GameObject ID="12" Name="Celerity Lv4">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>30000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA TOWERS 130;
+			SPELL_AREA PROJECTILES 131;
+			SPELL_AREA CREEPS 132;
+		</Script>
+	</GameObject>
+	<GameObject ID="13" Name="Celerity Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>30000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA TOWERS 134;
+			SPELL_AREA PROJECTILES 135;
+			SPELL_AREA CREEPS 136;
+		</Script>
+	</GameObject>
+	<GameObject ID="14" Name="Time Restraint Lv4">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>30000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA TOWERS 139;
+			SPELL_AREA PROJECTILES 140;
+			SPELL_AREA CREEPS 141;
+		</Script>
+	</GameObject>
+	<GameObject ID="15" Name="Time Restraint Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>30000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA TOWERS 143;
+			SPELL_AREA PROJECTILES 144;
+			SPELL_AREA CREEPS 145;
+		</Script>
+	</GameObject>
+	<GameObject ID="16" Name="Chronosphere Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 128</Values>
+		<Duration>15000</Duration>
+		<Animation>17</Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA PROJECTILES 148;
+			SPELL_AREA CREEPS 149;
+		</Script>
+	</GameObject>
+	<GameObject ID="17" Name="Ground Collapse Lv3">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>1000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA CREEPS 165;
+		</Script>
+	</GameObject>
+	<GameObject ID="18" Name="Ground Collapse Lv4">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>1500</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA CREEPS 167;
+		</Script>
+	</GameObject>
+	<GameObject ID="19" Name="Ground Collapse Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>2000</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA CREEPS 169;
+		</Script>
+	</GameObject>
+	<GameObject ID="20" Name="Thunderbolt Lv2 - Main Branch">
+		<Type>LINE_SEGMENT</Type>
+		<Values>0 0 256 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 1.35) + 116) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="21" Name="Thunderbolt Lv2 - Side Branch 1">
+		<Type>LINE_SEGMENT</Type>
+		<Values>180 160 100 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 116) * 0.75) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="22" Name="Thunderbolt Lv2 - Side Branch 2">
+		<Type>LINE_SEGMENT</Type>
+		<Values>264 -128 150 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 116) * 0.50) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="23" Name="Thunderbolt Lv2 - Side Branch 3">
+		<Type>LINE_SEGMENT</Type>
+		<Values>480 0 256 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 116) * 0.25) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="24" Name="Thunderbolt Lv3 - Main Branch">
+		<Type>LINE_SEGMENT</Type>
+		<Values>0 0 256 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 1.35) + 208) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="25" Name="Thunderbolt Lv3 - Side Branch 1">
+		<Type>LINE_SEGMENT</Type>
+		<Values>180 160 100 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 208) * 0.75) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="26" Name="Thunderbolt Lv3 - Side Branch 2">
+		<Type>LINE_SEGMENT</Type>
+		<Values>264 -128 150 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 208) * 0.5) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="27" Name="Thunderbolt Lv3 - Side Branch 3">
+		<Type>LINE_SEGMENT</Type>
+		<Values>480 0 256 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 208) * 0.25) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="28" Name="Thunderbolt Lv4 - Main Branch">
+		<Type>LINE_SEGMENT</Type>
+		<Values>0 0 256 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 1.35) + 410) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="29" Name="Thunderbolt Lv4 - Side Branch 1">
+		<Type>LINE_SEGMENT</Type>
+		<Values>180 160 100 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 410) * 0.75) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="30" Name="Thunderbolt Lv4 - Side Branch 2">
+		<Type>LINE_SEGMENT</Type>
+		<Values>264 -128 150 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 410) * 0.5) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="31" Name="Thunderbolt Lv4 - Side Branch 3">
+		<Type>LINE_SEGMENT</Type>
+		<Values>480 0 256 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 410) * 0.25) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="32" Name="Thunderbolt Lv5 - Main Branch">
+		<Type>LINE_SEGMENT</Type>
+		<Values>0 0 256 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 1.35) + 867) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="33" Name="Thunderbolt Lv5 - Side Branch 1">
+		<Type>LINE_SEGMENT</Type>
+		<Values>180 160 100 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 867) * 0.75) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="34" Name="Thunderbolt Lv5 - Side Branch 2">
+		<Type>LINE_SEGMENT</Type>
+		<Values>264 -128 150 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 867) * 0.5) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="35" Name="Thunderbolt Lv5 - Side Branch 3">
+		<Type>LINE_SEGMENT</Type>
+		<Values>480 0 256 0</Values>
+		<Duration>100</Duration>
+		<Animation></Animation>
+		<OnAdd>ROTATE_GOBJECT (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16)) 0 (GET POSITION MOUSE);</OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((((GET DAMAGE SELECTION) * 1.35) + 867) * 0.25) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="36" Name="Discharge Lv3">
+		<Type>CIRCLE</Type>
+		<Values>0 0 160</Values>
+		<Duration>4000</Duration>
+		<Animation>20</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 0.3) + 110) 1000 0
+		;</Script>
+	</GameObject>
+	<GameObject ID="37" Name="Discharge Lv4">
+		<Type>CIRCLE</Type>
+		<Values>0 0 176</Values>
+		<Duration>5000</Duration>
+		<Animation>22</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 0.3) + 163) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="38" Name="Discharge Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 192</Values>
+		<Duration>6000</Duration>
+		<Animation>24</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 0.3) + 272) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="39" Name="Turbulence Lv4">
+		<Type>CIRCLE</Type>
+		<Values>0 0 160</Values>
+		<Duration>100</Duration>
+		<Animation>27</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 0.9) + 5164) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="40" Name="Turbulence Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 192</Values>
+		<Duration>100</Duration>
+		<Animation>30</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((GET DAMAGE SELECTION) * 0.9) + 8722) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="41" Name="Blizzard Surface">
+		<Type>LINE</Type>
+		<Values>0 0 192 0</Values>
+		<Duration>NONE</Duration>
+		<Animation></Animation>
+		<OnAdd></OnAdd>
+		<Script></Script>
+	</GameObject>
+	<GameObject ID="42" Name="Blizzard Lv3">
+		<Type>RECT</Type>
+		<Values>0 0 256 256</Values>
+		<Duration>10000</Duration>
+		<Animation>37</Animation>
+		<OnAdd></OnAdd>
+		<Script>MAKE VARIABLE ELAPSEDTIME = ((GET GAME_TIME) - (GET GOBJECT_START_TIME SELF));
+			DAMAGE_AREA CREEP_HITPOINTS ((ELAPSEDTIME / 1000) * 163) 1000 0;
+			SPELL_AREA CREEPS 204;
+		</Script>
+	</GameObject>
+	<GameObject ID="43" Name="Blizzard Lv4">
+		<Type>RECT</Type>
+		<Values>0 0 256 256</Values>
+		<Duration>10000</Duration>
+		<Animation>38</Animation>
+		<OnAdd></OnAdd>
+		<Script>MAKE VARIABLE ELAPSEDTIME = ((GET GAME_TIME) - (GET GOBJECT_START_TIME SELF));
+			DAMAGE_AREA CREEP_HITPOINTS ((ELAPSEDTIME / 1000) * 221) 1000 0;
+			SPELL_AREA CREEPS 206;
+		</Script>
+	</GameObject>
+	<GameObject ID="44" Name="Blizzard Lv5">
+		<Type>RECT</Type>
+		<Values>0 0 256 256</Values>
+		<Duration>10000</Duration>
+		<Animation>39</Animation>
+		<OnAdd></OnAdd>
+		<Script>MAKE VARIABLE ELAPSEDTIME = ((GET GAME_TIME) - (GET GOBJECT_START_TIME SELF));
+			DAMAGE_AREA CREEP_HITPOINTS ((ELAPSEDTIME / 1000) * 315) 1000 0;
+			SPELL_AREA CREEPS 208;
+		</Script>
+	</GameObject>
+	<GameObject ID="45" Name="Frostbite Lv4">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((MIN_FIT (GET ARMOR SELF) 0) * 10) + ((GET DAMAGE SELECTION) * 0.15)) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="46" Name="Frostbite Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (((MIN_FIT (GET ARMOR SELF) 0) * 20) + ((GET DAMAGE SELECTION) * 0.15)) 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="47" Name="Drag Down Lv2">
+		<Type>RECT</Type>
+		<Values>0 0 30 30</Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (116 + ((GET DAMAGE SELECTION) * 0.75)) 1000 0;</Script>
+	</GameObject>
+	<GameObject ID="48" Name="Drag Down Lv3">
+		<Type>RECT</Type>
+		<Values>0 0 30 30</Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (177 + ((GET DAMAGE SELECTION) * 0.75)) 1000 0;</Script>
+	</GameObject>
+	<GameObject ID="49" Name="Drag Down Lv4">
+		<Type>RECT</Type>
+		<Values>0 0 30 30</Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (293 + ((GET DAMAGE SELECTION) * 0.75)) 1000 0;</Script>
+	</GameObject>
+	<GameObject ID="50" Name="Drag Down Lv5">
+		<Type>RECT</Type>
+		<Values>0 0 30 30</Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS (508 + ((GET DAMAGE SELECTION) * 0.75)) 1000 0;</Script>
+	</GameObject>
+	<GameObject ID="51" Name="Borrowed Time Lv5">
+		<Type>RECT</Type>
+		<Values>0 0 1088 832</Values>
+		<Duration>60000</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_MAX_HITPOINTS 
+			(
+				IF (ACTIVE_SPELL 230 SELF (GET SOURCE SELECTION))
+				(
+					;
+				);
+			)
+			0.5 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="52" Name="Solarbeam Surface">
+		<Type>LINE</Type>
+		<Values>0 0 1 1</Values>
+		<Duration>NONE</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd>SET VALUES SELF ((GET POSITION SELF X_VAL) - 16) (GET POSITION SELF Y_VAL) (GET POSITION SOURCE X_VAL) (GET POSITION SOURCE Y_VAL);</OnAdd>
+		<Script></Script>
+	</GameObject>
+	<GameObject ID="53" Name="Hallowing Light Lv4">
+		<Type>RECT</Type>
+		<Values>0 0 1088 832</Values>
+		<Duration>30000</Duration>
+		<Animation>57</Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA TOWERS 292;
+		</Script>
+	</GameObject>
+	<GameObject ID="54" Name="Hallowing Light Lv5">
+		<Type>RECT</Type>
+		<Values>0 0 1088 832</Values>
+		<Duration>45000</Duration>
+		<Animation>58</Animation>
+		<OnAdd></OnAdd>
+		<Script>SPELL_AREA TOWERS 294;
+		</Script>
+	</GameObject>
+	<GameObject ID="55" Name="Stigmata Lv1">
+		<Type>CIRCLE</Type>
+		<Values>0 0 32</Values>
+		<Duration>NONE</Duration>
+		<Animation>59</Animation>
+		<OnAdd></OnAdd>
+		<Script>SET POSITION SELF (MAKE POINT2D ((GET POSITION SOURCE X_VAL) + 16) ((GET POSITION SOURCE Y_VAL) + 16));
+			DAMAGE_AREA CREEP_HITPOINTS 666 1000 0;
+		</Script>
+	</GameObject>
+	<GameObject ID="56" Name="Corpse Explosion Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 64</Values>
+		<Duration>100</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>SELECT SELF;
+			DAMAGE_AREA CREEP_HITPOINTS ((GET CREEP_MAX_HITPOINTS SELF) * (RAND 0.7 1.2)) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="57" Name="Feedback Lv3">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>1000</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>DAMAGE_AREA CREEP_HITPOINTS ((GET CREEP_HITPOINTS SELF) * 0.15) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="58" Name="Feedback Lv4">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>1000</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>DAMAGE_AREA CREEP_HITPOINTS ((GET CREEP_HITPOINTS SELF) * 0.2) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+	<GameObject ID="59" Name="Feedback Lv5">
+		<Type>CIRCLE</Type>
+		<Values>0 0 96</Values>
+		<Duration>1000</Duration>
+		<Animation>NONE</Animation>
+		<OnAdd></OnAdd>
+		<Script>DAMAGE_AREA CREEP_HITPOINTS ((GET CREEP_HITPOINTS SELF) * 0.3) 0 0;
+			DELETE SELF;
+		</Script>
+	</GameObject>
+</GameObjectData>

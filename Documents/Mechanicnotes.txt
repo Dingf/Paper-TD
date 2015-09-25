@@ -1,0 +1,18 @@
+Mechanics:
+---------------------------------------------
+*Splash damage - All splash damage is linear.
+For example, a creep that is 16px away from a
+projectile that deals splash damage in 32px
+will suffer 50% of the damage. One that is 8px
+away will suffer 75%, and so on. 
+
+*Inherent splash - All projectiles, even those
+with a displayed splash radius of "0px" have
+some splash radius to ensure that projectiles
+targeting non-existant creeps have a chance to
+still hit other creeps. This inherent splash
+radius is based on the projectile's size, as
+displayed by the sprite. A projectile with a
+sprite 16x16px will have an inherent splash
+radius of 8 * sqrt(2), equal to the radius of
+the bounding circle.

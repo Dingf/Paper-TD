@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+
+<!-- &lt; = "<", &gt; = ">", &amp; = "&", &apos; = ', &quot; = " -->
+<!-- GhostState only denotes the state when the tower is first built. If a spell changes the ghost
+     state of a tower (which can block the path to the exit, causing a crash), then the state of 
+     that tower will be the state given by the spell.-->
+
+<TowerData version="1.0">
+	<Tower ID="0" Name="Null">
+		<BaseDamage>0</BaseDamage>
+		<BaseCost>0</BaseCost>
+		<BaseRange>0</BaseRange>
+		<BaseAttackTime>0</BaseAttackTime>
+		<CanBuild>FALSE</CanBuild>
+		<CanFire>FALSE</CanFire>
+		<CanSell>FALSE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>0</SpellCoefficient>
+		<UpgradeDamage>0 0 0 0</UpgradeDamage>
+		<UpgradeRange>0 0 0 0</UpgradeRange>
+		<UpgradeAttackTime>0 0 0 0</UpgradeAttackTime>
+		<KnownSpells></KnownSpells>
+		<Hotkey>NONE</Hotkey>
+		<Icon>NONE</Icon>
+		<Projectile>NONE</Projectile>
+		<Description></Description>
+	</Tower>
+	<Tower ID="1" Name="Wall">
+		<BaseDamage>0</BaseDamage>
+		<BaseCost>10</BaseCost>
+		<BaseRange>0</BaseRange>
+		<BaseAttackTime>0</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>FALSE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>0</SpellCoefficient>
+		<UpgradeDamage>0 0 0 0</UpgradeDamage>
+		<UpgradeRange>0 0 0 0</UpgradeRange>
+		<UpgradeAttackTime>0 0 0 0</UpgradeAttackTime>
+		<KnownSpells></KnownSpells>
+		<Hotkey>1</Hotkey>
+		<Icon>1</Icon>
+		<Projectile>1</Projectile>
+		<Description>The Wall is the most basic tower and can neither fire nor be upgraded.
+		However, it is very cost-effective at blocking enemy creeps.
+		</Description>
+	</Tower>
+	<Tower ID="2" Name="Watch Tower">
+		<BaseDamage>10</BaseDamage>
+		<BaseCost>50</BaseCost>
+		<BaseRange>100</BaseRange>
+		<BaseAttackTime>1000</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>TRUE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>1.0</SpellCoefficient>
+		<UpgradeDamage>10 15 20 25</UpgradeDamage>
+		<UpgradeRange>25 25 25 25</UpgradeRange>
+		<UpgradeAttackTime>-100 -100 -100 -100</UpgradeAttackTime>
+		<KnownSpells>1 32</KnownSpells>
+		<Hotkey>2</Hotkey>
+		<Icon>2</Icon>
+		<Projectile>1</Projectile>
+		<Description>&amp;cffff0000Single-Target&amp;cff000000\n
+		\nFast but weak, the Watch Tower can become fairly powerful against most creeps when 
+		upgraded.
+		</Description>
+	</Tower>
+	<Tower ID="3" Name="Water Tower">
+		<BaseDamage>50</BaseDamage>
+		<BaseCost>150</BaseCost>
+		<BaseRange>150</BaseRange>
+		<BaseAttackTime>2000</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>TRUE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>3.68</SpellCoefficient>
+		<UpgradeDamage>25 50 100 200</UpgradeDamage>
+		<UpgradeRange>25 25 25 25</UpgradeRange>
+		<UpgradeAttackTime>-100 -125 -150 -175</UpgradeAttackTime>
+		<KnownSpells>1 3 69</KnownSpells>
+		<Hotkey>3</Hotkey>
+		<Icon>3</Icon>
+		<Projectile>2</Projectile>
+		<Description>&amp;cffff0000Single-Target/Splash&amp;cff000000\n
+		\nThe Water Tower is a very versatile tower that can inflict heavy single-target or 
+		splash damage, regardless of armor.
+		</Description>
+	</Tower>
+	<Tower ID="4" Name="Clock Tower">
+		<BaseDamage>50</BaseDamage>
+		<BaseCost>400</BaseCost>
+		<BaseRange>96</BaseRange>
+		<BaseAttackTime>1000</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>TRUE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>2.65</SpellCoefficient>
+		<UpgradeDamage>25 50 50 75</UpgradeDamage>
+		<UpgradeRange>0 0 0 0</UpgradeRange>
+		<UpgradeAttackTime>0 0 0 0</UpgradeAttackTime>
+		<KnownSpells>2 3 115</KnownSpells>
+		<Hotkey>4</Hotkey>
+		<Icon>4</Icon>
+		<Projectile>4</Projectile>
+		<Description>&amp;cffff0000Spell/Splash&amp;cff000000\n
+		\nWith the ability to bend time in your favor, the Clock Tower is a powerful support
+		tower that doubles as a fast but damaging splash tower.
+		</Description>
+	</Tower>
+	<Tower ID="5" Name="Storm Tower">
+		<BaseDamage>150</BaseDamage>
+		<BaseCost>500</BaseCost>
+		<BaseRange>150</BaseRange>
+		<BaseAttackTime>3000</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>TRUE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>8.71</SpellCoefficient>
+		<UpgradeDamage>150 250 450 500</UpgradeDamage>
+		<UpgradeRange>0 0 0 0</UpgradeRange>
+		<UpgradeAttackTime>0 0 0 0</UpgradeAttackTime>
+		<KnownSpells>2 177</KnownSpells>
+		<Hotkey>5</Hotkey>
+		<Icon>5</Icon>
+		<Projectile>1</Projectile>
+		<Description>&amp;cffff0000Spell&amp;cff000000\n
+		\nPerhaps the most potent spell tower in the game, the Storm Tower can inflict 
+		devastating area of effect spell damage to any creep that is not immune to it.
+		</Description>
+	</Tower>
+	<Tower ID="6" Name="Eraser Tower">
+		<BaseDamage>100</BaseDamage>
+		<BaseCost>350</BaseCost>
+		<BaseRange>0</BaseRange>
+		<BaseAttackTime>0</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>FALSE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>TRUE</GhostState>
+		<SpellCoefficient>2.88</SpellCoefficient>
+		<UpgradeDamage>50 75 100 150</UpgradeDamage>
+		<UpgradeRange>0 0 0 0</UpgradeRange>
+		<UpgradeAttackTime>0 0 0 0</UpgradeAttackTime>
+		<KnownSpells>2 216</KnownSpells>
+		<Hotkey>6</Hotkey>
+		<Icon>6</Icon>
+		<Projectile>1</Projectile>
+		<Description>&amp;cffff0000Spell&amp;cff000000\n
+		\nInvisible to most creeps, the Eraser Tower damages any creep that happens to walk 
+		over it. In addition, its numerous auras and its ability to clear immunities make it
+		a valuable support tower.
+		</Description>
+	</Tower>
+	<Tower ID="7" Name="Sun Tower">
+		<BaseDamage>250</BaseDamage>
+		<BaseCost>800</BaseCost>
+		<BaseRange>250</BaseRange>
+		<BaseAttackTime>4000</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>TRUE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>4.5</SpellCoefficient>
+		<UpgradeDamage>100 150 200 300</UpgradeDamage>
+		<UpgradeRange>0 0 0 0</UpgradeRange>
+		<UpgradeAttackTime>0 0 0 0</UpgradeAttackTime>
+		<KnownSpells>2 3 260</KnownSpells>
+		<Hotkey>7</Hotkey>
+		<Icon>7</Icon>
+		<Projectile>6</Projectile>
+		<Description>&amp;cffff0000Spell/Splash&amp;cff000000\n
+		\nWith its impressive damage and strong support spells, the Sun Tower is a solid 
+		late-game tower whose only drawback is its large attack delay.
+		</Description>
+	</Tower>
+	<Tower ID="8" Name="Night Tower">
+		<BaseDamage>100</BaseDamage>
+		<BaseCost>800</BaseCost>
+		<BaseRange>50</BaseRange>
+		<BaseAttackTime>1500</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>TRUE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>4.5</SpellCoefficient>
+		<UpgradeDamage>100 100 100 100</UpgradeDamage>
+		<UpgradeRange>25 40 60 75</UpgradeRange>
+		<UpgradeAttackTime>-150 -150 -150 -150</UpgradeAttackTime>
+		<KnownSpells>1 2 300</KnownSpells>
+		<Hotkey>8</Hotkey>
+		<Icon>8</Icon>
+		<Projectile>1</Projectile>
+		<Description>&amp;cffff0000Single-Target/Spell&amp;cff000000\n
+		\nThough it requires good timing and position, the Night Tower has the highest burst
+		damage potential in the game, and can kill most creeps almost instantly.
+		</Description>
+	</Tower>
+	<Tower ID="9" Name="Chaos Tower">
+		<BaseDamage>500</BaseDamage>
+		<BaseCost>1000</BaseCost>
+		<BaseRange>100</BaseRange>
+		<BaseAttackTime>2000</BaseAttackTime>
+		<CanBuild>TRUE</CanBuild>
+		<CanFire>TRUE</CanFire>
+		<CanSell>TRUE</CanSell>
+		<SpecialRange>NONE</SpecialRange>
+		<GhostState>FALSE</GhostState>
+		<SpellCoefficient>6.12</SpellCoefficient>
+		<UpgradeDamage>100 150 250 500</UpgradeDamage>
+		<UpgradeRange>25 25 25 25</UpgradeRange>
+		<UpgradeAttackTime>0 0 0 0</UpgradeAttackTime>
+		<KnownSpells>2 336</KnownSpells>
+		<Hotkey>9</Hotkey>
+		<Icon>9</Icon>
+		<Projectile>1</Projectile>
+		<Description>&amp;cffff0000Spell&amp;cff000000\n
+		\nUnpredictable but undeniably powerful, the Chaos Tower can cast spells from other
+		towers or twist the maximum HP of creeps to your advantage.
+		</Description>
+	</Tower>
+</TowerData>

@@ -1,0 +1,4665 @@
+<?xml version="1.0"?>
+
+<!-- &lt; = "<", &gt; = ">", &amp; = "&", &apos; = ', &quot; = " -->
+
+<SpellData version="1.0">
+	<Spell ID="0" Name="Null">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>NONE</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>NONE</Icon>
+		<Hotkey>NONE</Hotkey>
+		<Text></Text>
+		<Script></Script>
+	</Spell>
+	<Spell ID="1" Name="Scatter Shot">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>1</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>13</Icon>
+		<Hotkey></Hotkey>
+		<Text>Active ability. Decreases the damage dealt by this tower by 50%, but doubles
+		its attack speed.
+		</Text>
+		<Script>MOD SELF TOWER_DAMAGE_BONUS -50 PERCENT;
+			MOD SELF TOWER_BAT_BONUS -50 PERCENT;
+		</Script>
+	</Spell>
+	<Spell ID="2" Name="Snipe">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>1</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>100</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Grants this tower the Snipe ability, which increases the projectile speeds of 
+		this tower. In addition, projectiles from this tower will no longer follow their 
+		targets. Instead, they gain a chance to pass through a creep on collision, dealing
+		damage multiple times to a single target or multiple targets in a line. Replaces
+		Scatter Shot. Active ability.\n\n&amp;cffff0000Level 2&amp;cff000000 - +100% move
+		speed, 25% chance\n&amp;cffff0000Level 3&amp;cff000000 - +250% move speed, 50% chance
+		\n&amp;cffff0000Level 4&amp;cff000000 - +500% move speed, 75% chance
+		\n&amp;cffff0000Level 5&amp;cff000000 - +1000% move speed, 100% chance
+		</Text>
+		<Script>LEARN_SPELL 4;
+			SHOW_SPELL 1 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="3" Name="Snipe">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Projectiles from this tower travel 100% faster but lose the 
+		ability to follow targets. However, they also pass through enemy creeps 25% of the 
+		time.
+		</Text>
+		<Script>FLAG SELF PROJ_FLAGS PFLAG_COLLIDE;
+			FLAG SELF PROJ_FLAGS PFLAG_LINEAR;
+			MOD SELF PROJ_SPEED_BONUS 100 PERCENT;
+			SET SELF PROJ_PHASE_PERCENT 25 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="4" Name="Snipe">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Active ability. Projectiles from this tower travel 100% faster but lose the 
+		ability to follow targets. However, they also pass through enemy creeps 25% of the 
+		time.
+		</Text>
+		<Script>APPLY_SPELL 3 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="5" Name="Snipe">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Projectiles from this tower travel 250% faster but lose the 
+		ability to follow targets. However, they also pass through enemy creeps 50% of the 
+		time.
+		</Text>
+		<Script>FLAG SELF PROJ_FLAGS PFLAG_COLLIDE;
+			FLAG SELF PROJ_FLAGS PFLAG_LINEAR;
+			MOD SELF PROJ_SPEED_BONUS 250 PERCENT;
+			SET SELF PROJ_PHASE_PERCENT 50 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="6" Name="Snipe">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>4</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Active ability. Projectiles from this tower travel 250% faster but lose the 
+		ability to follow targets. However, they also pass through enemy creeps 50% of the 
+		time.
+		</Text>
+		<Script>APPLY_SPELL 5 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="7" Name="Snipe">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Projectiles from this tower travel 500% faster but lose the 
+		ability to follow targets. However, they also pass through enemy creeps 75% of the 
+		time.
+		</Text>
+		<Script>FLAG SELF PROJ_FLAGS PFLAG_COLLIDE;
+			FLAG SELF PROJ_FLAGS PFLAG_LINEAR;
+			MOD SELF PROJ_SPEED_BONUS 500 PERCENT;
+			SET SELF PROJ_PHASE_PERCENT 75 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="8" Name="Snipe">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>6</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Active ability. Projectiles from this tower travel 500% faster but lose the 
+		ability to follow targets. However, they also pass through enemy creeps 75% of the 
+		time.
+		</Text>
+		<Script>APPLY_SPELL 7 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="9" Name="Snipe">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Projectiles from this tower travel 1000% faster but lose the 
+		ability to follow targets. However, they also pass through enemy creeps.
+		</Text>
+		<Script>FLAG SELF PROJ_FLAGS PFLAG_COLLIDE;
+			FLAG SELF PROJ_FLAGS PFLAG_LINEAR;
+			MOD SELF PROJ_SPEED_BONUS 1000 PERCENT;
+			SET SELF PROJ_PHASE_PERCENT 100 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="10" Name="Snipe">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>8</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>14</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Active ability. Projectiles from this tower travel 100% faster but lose the 
+		ability to follow targets. However, they also pass through enemy creeps.
+		</Text>
+		<Script>APPLY_SPELL 9 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="11" Name="Point Blank">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>2</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>100</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>15</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Grants this tower the Point Blank ability, which doubles this tower's damage
+		if it attacks a nearby creep. Passive ability.\n\n&amp;cffff0000Level 3&amp;cff000000
+		- 64px radius\n&amp;cffff0000Level 4&amp;cff000000 - 96px radius\n&amp;cffff0000Level 
+		5&amp;cff000000 - 128px radius
+		</Text>
+		<Script>LEARN_SPELL 12;</Script>
+	</Spell>
+	<Spell ID="12" Name="Point Blank">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>15</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This tower deals double damage if its initial attack target
+		is within 64px of this tower.
+		</Text>
+		<Script>ONFIRE 
+			(
+				IF ((GET DISTANCE SELF ATTACK_TARGET) &lt;= 64)
+				(
+					MOD SELF TOWER_DAMAGE_BONUS 100 PERCENT;
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="13" Name="Point Blank">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>12</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>15</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This tower deals double damage if its initial attack target
+		is within 96px of this tower.
+		</Text>
+		<Script>ONFIRE 
+			(
+				IF ((GET DISTANCE SELF ATTACK_TARGET) &lt;= 96)
+				(
+					MOD SELF TOWER_DAMAGE_BONUS 100 PERCENT;
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="14" Name="Point Blank">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>13</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>15</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This tower deals double damage if its initial attack target
+		is within 128px of this tower.
+		</Text>
+		<Script>ONFIRE 
+			(
+				IF ((GET DISTANCE SELF ATTACK_TARGET) &lt;= 128)
+				(
+					MOD SELF TOWER_DAMAGE_BONUS 100 PERCENT;
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="15" Name="Teleport">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>11</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>16</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Grants this tower the Teleport ability, which allows it to instantly move to
+		another unoccupied location. Triggered ability.\n\n&amp;cffff0000Level 4&amp;cff000000
+		- 5 min. cooldown\n&amp;cffff0000Level 5&amp;cff000000 - 3 min. cooldown
+		</Text>
+		<Script>LEARN_SPELL 16;</Script>
+	</Spell>
+	<Spell ID="16" Name="Teleport">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>300000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>16</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Instantly teleports this tower to another unoccupied location.
+		5 minute cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				BUILD_TOWER SELF (GET COORDS MOUSE);
+				ANIMATE 3 (POINT2D (((GET COORDS_X MOUSE) * 32) + 64) (((GET COORDS_Y MOUSE) * 32) + 64));
+				ANIMATE 3 (POINT2D ((GET POS_X SELF) - 16) ((GET POS_Y SELF) - 16));
+				DELETE SELF;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="17" Name="Teleport">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>16</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>180000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>16</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Instantly teleports this tower to another unoccupied location.
+		3 minute cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				BUILD_TOWER SELF (GET COORDS MOUSE);
+				ANIMATE 3 (POINT2D (((GET COORDS_X MOUSE) * 32) + 64) (((GET COORDS_Y MOUSE) * 32) + 64));
+				ANIMATE 3 (POINT2D ((GET POS_X SELF) - 16) ((GET POS_Y SELF) - 16));
+				DELETE SELF;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="18" Name="Singularity">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>15</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>17</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Grants this tower the Singularity ability, which instantly teleports all creeps 
+		on the page to a targeted empty location. Cannot be used to teleport creeps into
+		unreachable areas. Triggered ability.\n\n&amp;cffff0000Level 
+		5&amp;cff000000 - 1 charge
+		</Text>
+		<Script>LEARN_SPELL 19;</Script>
+	</Spell>
+	<Spell ID="19" Name="Singularity">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>17</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Triggered ability. Teleports all creeps on the page to a targeted, unoccupied
+		location. Cannot be used to teleport creeps into unreachable areas.
+		</Text>
+		<Script>ONCLICK
+			(
+				IF ((GET GRID (GET COORDS MOUSE)) != 1) 
+				(
+					FORALL CREEP
+					(
+						SET POSITION SELF (GET POSITION MOUSE);
+					);
+					ANIMATE 5 (POINT2D ((GET POS_X MOUSE) - 32) ((GET POS_Y MOUSE) - 32));
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="20" Name="Chain Shot">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>1</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>18</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Grants this tower the Chain Shot ability, which allows this tower to fire multiple
+		projetiles every time it would normally attack. However, each projectile deals less
+		damage than it normally would. Replaces Scatter Shot. Active ability.\n\n&amp;cffff0000Level 
+		2&amp;cff000000 - 2 projectiles, 50% damage\n&amp;cffff0000Level 3&amp;cff000000 -
+		3 projectiles, 50% damage\n&amp;cffff0000Level 4&amp;cff000000 - 4 projectiles, 50%
+		damage\n&amp;cffff0000Level 5&amp;cff000000 - 5 projectiles, 50% damage
+		</Text>
+		<Script>LEARN_SPELL 21;
+			SHOW_SPELL 1 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="21" Name="Chain Shot">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>18</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Active ability. Each time this tower attacks, it fires two projectiles instead
+		of one. However, each projectile only does 50% of the tower's normal damage.
+		</Text>
+		<Script>MOD SELF TOWER_DAMAGE_BONUS -50 PERCENT;
+			ONFIRE
+			(
+				FIRE_TOWER;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="22" Name="Chain Shot">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>21</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>18</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Active ability. Each time this tower attacks, it fires three projectiles instead
+		of one. However, each projectile only does 50% of the tower's normal damage.
+		</Text>
+		<Script>MOD SELF TOWER_DAMAGE_BONUS -50 PERCENT;
+			ONFIRE
+			(
+				FOR 2 (FIRE_TOWER);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="23" Name="Chain Shot">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>22</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>18</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Active ability. Each time this tower attacks, it fires four projectiles instead
+		of one. However, each projectile only does 50% of the tower's normal damage.
+		</Text>
+		<Script>MOD SELF TOWER_DAMAGE_BONUS -50 PERCENT;
+			ONFIRE
+			(
+				FOR 3 (FIRE_TOWER);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="24" Name="Chain Shot">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>23</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>18</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Active ability. Each time this tower attacks, it fires five projectiles instead
+		of one. However, each projectile only does 50% of the tower's normal damage.
+		</Text>
+		<Script>MOD SELF TOWER_DAMAGE_BONUS -50 PERCENT;
+			ONFIRE
+			(
+				FOR 4 (FIRE_TOWER);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="25" Name="Reload">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>20</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>19</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Grants this tower the Reload ability, which allows this tower to fire twice 
+		every few seconds. Passive ability.\n\n&amp;cffff0000Level 3&amp;cff000000 - 5 sec. 
+		cooldown\n&amp;cffff0000Level 4&amp;cff000000 - 4 sec. cooldown\n&amp;cffff0000Level
+		5&amp;cff000000 - 3 sec. cooldown
+		</Text>
+		<Script>LEARN_SPELL 26;</Script>
+	</Spell>
+	<Spell ID="26" Name="Reload">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>5000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>19</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. When this spell is not on cooldown, this tower can fire twice
+		in a row. 5 second cooldown.
+		</Text>
+		<Script>ONFIRE
+			(
+				SET SELF TOWER_LAST_ATTACK 0 FLAT;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="27" Name="Reload">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>26</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>4000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>19</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. When this spell is not on cooldown, this tower can fire twice
+		in a row. 4 second cooldown.
+		</Text>
+		<Script>ONFIRE
+			(
+				SET SELF TOWER_LAST_ATTACK 0 FLAT;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="28" Name="Reload">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>27</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>3000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>19</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. When this spell is not on cooldown, this tower can fire twice
+		in a row. 3 second cooldown.
+		</Text>
+		<Script>ONFIRE
+			(
+				SET SELF TOWER_LAST_ATTACK 0 FLAT;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="29" Name="Rotary Cannon">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>25</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>20</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Grants this tower the Rotary Cannon ability, which reduces this tower's attack
+		speed to one-tenth of its current attack speed for a certain amount of time. Triggered 
+		ability.\n\n&amp;cffff0000Level 4&amp;cff000000 - 5 sec., 1 charge\n&amp;cffff0000Level 
+		5&amp;cff000000 - 8 sec., 1 charge
+		</Text>
+		<Script>LEARN_SPELL 31;</Script>
+	</Spell>
+	<Spell ID="30" Name="Rotary Cannon Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>5000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>20</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Reduces this tower's attack speed to one-tenth of its current
+		attack speed for five seconds.
+		</Text>
+		<Script>SET SELF TOWER_BAT_BONUS 10 PERCENT;</Script>
+	</Spell>
+	<Spell ID="31" Name="Rotary Cannon">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>20</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Reduces this tower's attack speed to one-tenth of its current
+		attack speed for five seconds.
+		</Text>
+		<Script>APPLY_SPELL 30 SELF SELF;</Script>
+	</Spell>
+	<Spell ID="32" Name="Rotary Cannon Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>8000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>20</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Reduces this tower's attack speed to one-tenth of its current
+		attack speed for eight seconds.
+		</Text>
+		<Script>SET SELF TOWER_BAT_BONUS 10 PERCENT;</Script>
+	</Spell>
+	<Spell ID="33" Name="Rotary Cannon">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>31</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>20</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Reduces this tower's attack speed to one-tenth of its current
+		attack speed for eight seconds.
+		</Text>
+		<Script>APPLY_SPELL 32 SELF SELF;</Script>
+	</Spell>
+	<Spell ID="34" Name="Piercing Shell">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>29</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>21</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Grants this tower the Piercing Shell ability, which causes every projectile from
+		this tower to reduce an enemy creep's armor for a certain amount of time.  Passive 
+		ability.\n\n&amp;cffff0000Level 5&amp;cff000000 - -1 armor, 3 sec. duration
+		</Text>
+		<Script>LEARN_SPELL 37;</Script>
+	</Spell>
+	<Spell ID="35" Name="Piercing Shell Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>3000</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>21</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Every projectile from this tower reduces the armor of enemy
+		creeps that it hits by 1 for 3 seconds.
+		</Text>
+		<Script>MOD SELF CREEP_ARMOR_FLAT -1 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="36" Name="Piercing Shell">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>21</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Every projectile from this tower reduces the armor of enemy
+		creeps that it hits by 1 for 3 seconds, up to a maximum of -100 armor total.
+		</Text>
+		<Script>ONHIT
+			(
+				APPLY_SPELL 35 ATTACK_TARGET ATTACK_TARGET;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="37" Name="Piercing Shell">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>21</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Every projectile from this tower reduces the armor of enemy
+		creeps that it hits by 1 for 3 seconds, up to a maximum of -100 armor total.
+		</Text>
+		<Script>APPLY_SPELL 36 TOWER_PROJECTILE SELF;</Script>
+	</Spell>
+	<Spell ID="38" Name="Fluidity">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>1</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>22</Icon>
+		<Hotkey></Hotkey>
+		<Text>Active ability. Every time this tower fires, it gets a random bonus to damage
+		between -25% and 50%, non-cumulative.
+		</Text>
+		<Script>ONFIRE
+			(
+				MOD SELF TOWER_DAMAGE_BONUS (RAND -25 50) PERCENT;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="39" Name="Inkpool">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>38</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey>W</Hotkey>
+		<Text>Grants this tower the Inkpool ability, which creates a large blot of ink when
+		this tower's projectiles hit an enemy creep. This blot of ink deals damage to enemy
+		creeps that walk over it, decreasing over time, and lasts for 2 seconds. Replaces
+		Fluidity. Active ability.\n\n&amp;cffff0000Level 2&amp;cff000000 - 200 + 2x tower
+		damage/sec.\n&amp;cffff0000Level 3&amp;cff000000 - 300 + 3x tower damage/sec.
+		\n&amp;cffff0000Level 4&amp;cff000000 - 400 + 4x tower damage/sec.
+		\n&amp;cffff0000Level 5&amp;cff000000 - 500 + 5x tower damage/sec.
+		</Text>
+		<Script>LEARN_SPELL 41;
+			SHOW_SPELL 38 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="40" Name="Inkpool Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. When projectiles from this tower hit an enemy creep, they
+		explode and leave a large blot of ink on the page. This blot of ink deals a maximum
+		of 200 + 2x this tower's damage every second, for 2 seconds.
+		</Text>
+		<Script>ONEXPLODE
+			(
+				ADD_GOBJECT 1 (POINT2D ((GET POS_X SELF) - 16) ((GET POS_Y SELF) - 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="41" Name="Inkpool">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey>W</Hotkey>
+		<Text>Active ability. When projectiles from this tower hit an enemy creep, they
+		explode and leave a large blot of ink on the page. This blot of ink deals a maximum
+		of 200 + 2x this tower's damage every second, for 2 seconds.
+		damage/sec.
+		</Text>
+		<Script>SET_PROJECTILE 2;
+			APPLY_SPELL 40 TOWER_PROJECTILE TOWER_PROJECTILE;
+		</Script>
+	</Spell>
+	<Spell ID="42" Name="Inkpool Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. When projectiles from this tower hit an enemy creep, they
+		explode and leave a large blot of ink on the page. This blot of ink deals a maximum
+		of 300 + 3x this tower's damage every second, for 2 seconds.
+		</Text>
+		<Script>REMOVE_SPELL 40 SELF SELF;
+			ONEXPLODE
+			(
+				ADD_GOBJECT 2 (POINT2D ((GET POS_X SELF) - 16) ((GET POS_Y SELF) - 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="43" Name="Inkpool">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>41</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey>W</Hotkey>
+		<Text>Active ability. When projectiles from this tower hit an enemy creep, they
+		explode and leave a large blot of ink on the page. This blot of ink deals a maximum
+		of 300 + 3x this tower's damage every second, for 2 seconds.
+		</Text>
+		<Script>SET_PROJECTILE 2;
+			APPLY_SPELL 42 TOWER_PROJECTILE TOWER_PROJECTILE;
+		</Script>
+	</Spell>
+	<Spell ID="44" Name="Inkpool Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. When projectiles from this tower hit an enemy creep, they
+		explode and leave a large blot of ink on the page. This blot of ink deals a maximum
+		of 400 + 4x this tower's damage every second, for 2 seconds.
+		</Text>
+		<Script>REMOVE_SPELL 42 SELF SELF;
+			ONEXPLODE
+			(
+				ADD_GOBJECT 3 (POINT2D ((GET POS_X SELF) - 16) ((GET POS_Y SELF) - 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="45" Name="Inkpool">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>43</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey>W</Hotkey>
+		<Text>Active ability. When projectiles from this tower hit an enemy creep, they
+		explode and leave a large blot of ink on the page. This blot of ink deals a maximum
+		of 400 + 4x this tower's damage every second, for 2 seconds.
+		</Text>
+		<Script>SET_PROJECTILE 2;
+			APPLY_SPELL 44 TOWER_PROJECTILE TOWER_PROJECTILE;	
+		</Script>
+	</Spell>
+	<Spell ID="46" Name="Inkpool Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. When projectiles from this tower hit an enemy creep, they
+		explode and leave a large blot of ink on the page. This blot of ink deals a maximum
+		of 500 + 5x this tower's damage every second, for 2 seconds.
+		</Text>
+		<Script>REMOVE_SPELL 44 SELF SELF;
+			ONEXPLODE
+			(
+				ADD_GOBJECT 4 (POINT2D ((GET POS_X SELF) - 16) ((GET POS_Y SELF) - 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="47" Name="Inkpool">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>45</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>23</Icon>
+		<Hotkey>W</Hotkey>
+		<Text>Active ability. When projectiles from this tower hit an enemy creep, they
+		explode and leave a large blot of ink on the page. This blot of ink deals a maximum
+		of 500 + 5x this tower's damage every second, for 2 seconds.
+		</Text>
+		<Script>SET_PROJECTILE 2;
+			APPLY_SPELL 46 TOWER_PROJECTILE TOWER_PROJECTILE;
+		</Script>
+	</Spell>
+	<Spell ID="48" Name="Drench">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>39</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>24</Icon>
+		<Hotkey>D</Hotkey>
+		<Text>Grants this tower the Drench ability, which deals instant damage and reduces
+		the targeted creep's armor for 10 seconds. 3 sec. cooldown. Triggered ability.\n
+		\n&amp;cffff0000Level 3&amp;cff000000 - 82 + normal damage, -2 armor
+		\n&amp;cffff0000Level 4&amp;cff000000 - 157 + normal damage, -3 armor
+		\n&amp;cffff0000Level 5&amp;cff000000 - 319 + normal damage, -5 armor
+		</Text>
+		<Script>LEARN_SPELL 50;
+		</Script>
+	</Spell>
+	<Spell ID="49" Name="Drench Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown></Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>10000</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Reduces a targeted creep's armor by 2. Lasts for 10 seconds.
+		</Text>
+		<Script>MOD SELF CREEP_ARMOR_FLAT -2 FLAT;</Script>
+	</Spell>	
+	<Spell ID="50" Name="Drench">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>3000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>24</Icon>
+		<Hotkey>D</Hotkey>
+		<Text>Triggered ability. Instantly deals 82 + normal damage to a creep and reduces 
+		its armor by 2 for 10 seconds. 3 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				SELECT SELF;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						APPLY_SPELL 49 SELF SELF;
+						DAMAGE_CREEP SELF (82 + (GET DAMAGE SELECTION)) (GET ARMOR SELF);
+						STOP;
+					)
+				);
+				ADD_EMITTER 1 (GET POSITION MOUSE);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="51" Name="Drench Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown></Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>10000</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Reduces a targeted creep's armor by 3. Lasts for 10 seconds.
+		</Text>
+		<Script>MOD SELF CREEP_ARMOR_FLAT -3 FLAT;</Script>
+	</Spell>	
+	<Spell ID="52" Name="Drench">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>50</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>3000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>24</Icon>
+		<Hotkey>D</Hotkey>
+		<Text>Triggered ability. Instantly deals 157 + normal damage to a creep and reduces 
+		its armor by 3 for 10 seconds. 3 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				SELECT SELF;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						APPLY_SPELL 51 SELF SELF;
+						DAMAGE_CREEP SELF (157 + (GET DAMAGE SELECTION)) (GET ARMOR SELF);
+						STOP;
+					);
+				);
+				ADD_EMITTER 2 (GET POSITION MOUSE);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="53" Name="Drench Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown></Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>10000</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Reduces a targeted creep's armor by 5. Lasts for 10 seconds.
+		</Text>
+		<Script>MOD SELF CREEP_ARMOR_FLAT -5 FLAT;</Script>
+	</Spell>	
+	<Spell ID="54" Name="Drench">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>52</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>3000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>24</Icon>
+		<Hotkey>D</Hotkey>
+		<Text>Triggered ability. Instantly deals 319 + normal damage to a creep and reduces 
+		its armor by 5 for 10 seconds. 3 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				SELECT SELF;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						APPLY_SPELL 53 SELF SELF;
+						DAMAGE_CREEP SELF (319 + (GET DAMAGE SELECTION)) (GET ARMOR SELF);
+						STOP;
+					);
+				);
+				ADD_EMITTER 3 (GET POSITION MOUSE);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="55" Name="Splash Aura">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>48</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>25</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Grants this tower the Splash Aura ability, which increases the splash radius
+		of all towers within 128px. Does not stack with Splash Aura. Passive ability.\n
+		\n&amp;cffff0000Level 4&amp;cff000000 - 50% increase\n&amp;cffff0000Level 
+		5&amp;cff000000 - 100% increase
+		</Text>
+		<Script>LEARN_SPELL 58;
+		</Script>
+	</Spell>
+	<Spell ID="56" Name="Splash Aura Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>1</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>25</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		50%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>MOD SELF PROJ_SPLASH_BONUS 50 PERCENT;</Script>
+	</Spell>
+	<Spell ID="57" Name="Splash Aura Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>25</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		50%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_SPELL 56 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="58" Name="Splash Aura">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>25</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		50%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_AURA 57 128;</Script>
+	</Spell>
+	<Spell ID="59" Name="Splash Aura Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>1</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>25</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		100%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>REMOVE_SPELL 56 SELF SELF;
+			MOD SELF PROJ_SPLASH_BONUS 100 PERCENT;</Script>
+	</Spell>
+	<Spell ID="60" Name="Splash Aura Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>25</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		100%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_SPELL 59 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="61" Name="Splash Aura">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>58</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>25</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		100%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_AURA 60 128;</Script>
+	</Spell>
+	<Spell ID="62" Name="The Great Flood">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>55</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>26</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Grants this tower The Great Flood ability, which instantly deals damage to all 
+		creeps based on the number of creeps on the page. 5 min. cooldown. Triggered ability.
+		\n\n&amp;cffff0000Level 5&amp;cff000000 - 1% max. HP damage per creep
+		</Text>
+		<Script>LEARN_SPELL 63;</Script>
+	</Spell>
+	<Spell ID="63" Name="The Great Flood">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>300000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>26</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Triggered ability. Inflicts 1% max. HP damage to all creeps for every creep 
+		that is currently on the page. 5 minute cooldown.
+		</Text>
+		<Script>VARIABLE CREEP_COUNTER = 0;
+			FORALL CREEP
+			(
+				CREEP_COUNTER = (CREEP_COUNTER + 1);
+			);
+			FORALL CREEP
+			(
+				DAMAGE_CREEP SELF (((GET CREEP_MAX_HITPOINTS SELF) * 0.01) * CREEP_COUNTER) (GET ARMOR SELF);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="64" Name="Steam Cannon">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>38</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>27</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Grants this tower the Steam Cannon ability, which allows this tower to fire a
+		projectile every 0.01 seconds at the cost of reduced projectile damage. Active ability.
+		\n\n&amp;cffff0000Level 2&amp;cff000000 - 1% normal damage\n&amp;cffff0000Level 
+		3&amp;cff000000 - 2% normal damage\n&amp;cffff0000Level 4&amp;cff000000 - 3% normal
+		damage\n&amp;cffff0000Level 5&amp;cff000000 - 4% normal damage
+		</Text>
+		<Script>LEARN_SPELL 65;
+			SHOW_SPELL 38 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="65" Name="Steam Cannon">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>27</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Active ability. This tower's attack speed is reduced to 0.01 seconds, but damage
+		dealt by each projectile is also reduced to 1% normal damage.
+		</Text>
+		<Script>SET_PROJECTILE 3;
+			VARIABLE BASE_SPEED = ((GET TOWER_BAT SELF) + (GET TOWER_BAT_FLAT SELF));
+			SET SELF TOWER_BAT_BONUS (10 / BASE_SPEED) FLAT;
+			SET SELF TOWER_DAMAGE_BONUS 0.01 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="66" Name="Steam Cannon">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>65</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>27</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Active ability. This tower's attack speed is reduced to 0.01 seconds, but damage
+		dealt by each projectile is also reduced to 2% normal damage.
+		</Text>
+		<Script>SET_PROJECTILE 3;
+			VARIABLE BASE_SPEED = ((GET TOWER_BAT SELF) + (GET TOWER_BAT_FLAT SELF));
+			SET SELF TOWER_BAT_BONUS (10 / BASE_SPEED) FLAT;
+			SET SELF TOWER_DAMAGE_BONUS 0.02 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="67" Name="Steam Cannon">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>66</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>27</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Active ability. This tower's attack speed is reduced to 0.01 seconds, but damage
+		dealt by each projectile is also reduced to 3% normal damage.
+		</Text>
+		<Script>SET_PROJECTILE 3;
+			VARIABLE BASE_SPEED = ((GET TOWER_BAT SELF) + (GET TOWER_BAT_FLAT SELF));
+			SET SELF TOWER_BAT_BONUS (10 / BASE_SPEED) FLAT;
+			SET SELF TOWER_DAMAGE_BONUS 0.03 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="68" Name="Steam Cannon">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>67</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>27</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Active ability. This tower's attack speed is reduced to 0.01 seconds, but damage
+		dealt by each projectile is also reduced to 4% normal damage.
+		</Text>
+		<Script>SET_PROJECTILE 3;
+			VARIABLE BASE_SPEED = ((GET TOWER_BAT SELF) + (GET TOWER_BAT_FLAT SELF));
+			SET SELF TOWER_BAT_BONUS (10 / BASE_SPEED) FLAT;
+			SET SELF TOWER_DAMAGE_BONUS 0.04 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="69" Name="Pressure Valve">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>64</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>28</Icon>
+		<Hotkey>V</Hotkey>
+		<Text>Grants this tower the Pressure Valve ability, which extends the range of this
+		tower. These bonuses are not cumulative. Passive ability.\n\n&amp;cffff0000Level 
+		3&amp;cff000000 - +50px\n&amp;cffff0000Level 4&amp;cff000000 - +75px
+		\n&amp;cffff0000Level 5&amp;cff000000 - +100px
+		</Text>
+		<Script>LEARN_SPELL 70;</Script>
+	</Spell>
+	<Spell ID="70" Name="Pressure Valve">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>28</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Extends this tower's range by 50px.</Text>
+		<Script>MOD SELF TOWER_RANGE_FLAT 50 FLAT;</Script>
+	</Spell>
+	<Spell ID="71" Name="Pressure Valve">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>70</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>28</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Extends this tower's range by 75px.</Text>
+		<Script>MOD SELF TOWER_RANGE_FLAT 75 FLAT;</Script>
+	</Spell>
+	<Spell ID="72" Name="Pressure Valve">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>71</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>28</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Extends this tower's range by 100px.</Text>
+		<Script>MOD SELF TOWER_RANGE_FLAT 100 FLAT;</Script>
+	</Spell>
+	<Spell ID="73" Name="Scald">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>69</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>29</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Grants this tower the Scald ability, which increases the projectile damage of
+		this tower by a random amount every time this tower fires. Passive ability.\n
+		\n&amp;cffff0000Level 4&amp;cff000000 - +1-5 damage\n&amp;cffff0000Level 
+		5&amp;cff000000 - +1-15 damage
+		</Text>
+		<Script>LEARN_SPELL 74;</Script>
+	</Spell>
+	<Spell ID="74" Name="Scald">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>29</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Each projectile from this tower deals an additional 1 to 5 
+		damage.
+		</Text>
+		<Script>ONFIRE
+			(
+				MOD TOWER_PROJECTILE PROJ_DAMAGE_FLAT (RAND 1 5) FLAT;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="75" Name="Scald">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>74</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NO</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>29</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Each projectile from this tower deals an additional 1 to 15 
+		damage.
+		</Text>
+		<Script>ONFIRE
+			(
+				MOD TOWER_PROJECTILE PROJ_DAMAGE_FLAT (RAND 1 15) FLAT;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="76" Name="Overheat">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>73</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>30</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Grants this tower the Overheat ability, which deals damage over time to nearby
+		creeps within 64px from this tower. While Overheat is active, this tower cannot fire.
+		Lasts for 30 sec. 5 min. cooldown. Triggered ability.\n\n&amp;cffff0000Level 
+		5&amp;cff000000 - 500 damage/sec.
+		</Text>
+		<Script>LEARN_SPELL 77;</Script>
+	</Spell>
+	<Spell ID="77" Name="Overheat">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>300000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>30</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Triggered ability. While active, this tower will deal 500 damage/sec. to all
+		creeps within 64px, but cannot fire. Lasts for 30 seconds. 5 minute cooldown.
+		</Text>
+		<Script>ADD_GOBJECT 5 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			APPLY_SPELL 78 SELF SELF;
+		</Script>
+	</Spell>
+	<Spell ID="78" Name="Overheat Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>30000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>30</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. While active, this tower will deal 500 damage/sec. to all
+		creeps within 64px, but cannot fire. Lasts for 30 seconds. 5 minute cooldown.
+		</Text>
+		<Script>SET SELF TOWER_CAN_FIRE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="79" Name="Shockwave">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>1</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>120000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>31</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Triggered ability. Inflicts 100 damage to all creeps on the page and slows
+		their movement speeds by 50% for 1 second. Does not stack with Shockwave. 1 minute
+		cooldown.
+		</Text>
+		<Script>FORALL CREEP
+			(
+				DAMAGE_CREEP SELF 100 (GET ARMOR SELF);
+				APPLY_SPELL 80 SELF SELF;
+			);	
+		</Script>
+	</Spell>
+	<Spell ID="80" Name="Shockwave">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>1</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>1000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>31</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows all creeps on the page by 50% for 1 second. Does not 
+		stack with Shockwave.
+		</Text>
+		<Script>MOD SELF CREEP_SPEED_BONUS -50 PERCENT;</Script>
+	</Spell>
+	<Spell ID="81" Name="Timerift">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>79</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Grants this tower the Timerift ability, which stuns nearby creeps that are hit
+		by this tower for a short amount of time. Does not stack with Timerift. Replaces 
+		Shockwave. Active ability.\n\n&amp;cffff0000Level 2&amp;cff000000 - 0.1 sec. stun
+		\n&amp;cffff0000Level 3&amp;cff000000 - 0.15 sec. stun\n&amp;cffff0000Level 
+		4&amp;cff000000 - 0.2 sec. stun\n&amp;cffff0000Level 5&amp;cff000000 - 0.25 sec. 
+		stun
+		</Text>
+		<Script>LEARN_SPELL 84;
+			SHOW_SPELL 79 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="82" Name="Timerift Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>100</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Nearby creeps that are hit by this tower are stunned for 0.1
+		seconds.</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="83" Name="Timerift">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey></Hotkey>
+		<Text>Active ability. Nearby creeps that are hit by this tower are stunned for 0.1
+		seconds.</Text>
+		<Script>ONHIT
+			(
+				APPLY_SPELL 82 ATTACK_TARGET ATTACK_TARGET;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="84" Name="Timerift">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Active ability. Nearby creeps that are hit by this tower are stunned for 0.1
+		seconds.</Text>
+		<Script>APPLY_SPELL 83 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="85" Name="Timerift Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>150</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Nearby creeps that are hit by this tower are stunned for 0.15
+		seconds.
+		</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="86" Name="Timerift">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey></Hotkey>
+		<Text>Active ability. Nearby creeps that are hit by this tower are stunned for 0.15
+		seconds.
+		</Text>
+		<Script>ONHIT
+			(
+				APPLY_SPELL 85 ATTACK_TARGET ATTACK_TARGET;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="87" Name="Timerift">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>84</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Active ability. Nearby creeps that are hit by this tower are stunned for 0.15
+		seconds.
+		</Text>
+		<Script>APPLY_SPELL 86 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="88" Name="Timerift Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>200</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Nearby creeps that are hit by this tower are stunned for 0.2
+		seconds.
+		</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="89" Name="Timerift">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey></Hotkey>
+		<Text>Active ability. Nearby creeps that are hit by this tower are stunned for 0.2
+		seconds.
+		</Text>
+		<Script>ONHIT
+			(
+				APPLY_SPELL 88 ATTACK_TARGET ATTACK_TARGET;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="90" Name="Timerift">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>87</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Active ability. Nearby creeps that are hit by this tower are stunned for 0.2
+		seconds.
+		</Text>
+		<Script>APPLY_SPELL 89 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="91" Name="Timerift Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>250</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Nearby creeps that are hit by this tower are stunned for 0.25
+		seconds.
+		</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="92" Name="Timerift">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey></Hotkey>
+		<Text>Active ability. Nearby creeps that are hit by this tower are stunned for 0.25
+		seconds.
+		</Text>
+		<Script>ONHIT
+			(
+				APPLY_SPELL 91 ATTACK_TARGET ATTACK_TARGET;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="93" Name="Timerift">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>90</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>32</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Active ability. Nearby creeps that are hit by this tower are stunned for 0.25
+		seconds.
+		</Text>
+		<Script>APPLY_SPELL 92 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="94" Name="Stasis">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>81</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>33</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Grants this tower the Stasis ability, which stuns a single creep for an amount
+		of time. Triggered ability.\n\n&amp;cffff0000Level 3&amp;cff000000 - 1 sec. stun, 30
+		sec. cooldown\n&amp;cffff0000Level 4&amp;cff000000 - 2 sec. stun, 35 sec. cooldown
+		\n&amp;cffff0000Level 5&amp;cff000000 - 3 sec. stun, 40 sec. cooldown
+		</Text>
+		<Script>LEARN_SPELL 96;</Script>
+	</Spell>
+	<Spell ID="95" Name="Stasis Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>1000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>33</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Stuns a targeted creep for 1 second.
+		</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="96" Name="Stasis">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>30000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>33</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Stuns a targeted creep for 1 second. 30 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				SELECT SELF;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						APPLY_SPELL 95 SELF SELF;
+						STOP;
+					)
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="97" Name="Stasis Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>2000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>33</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Stuns a targeted creep for 2 seconds.
+		</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="98" Name="Stasis">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>96</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>35000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>33</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Stuns a targeted creep for 2 seconds. 35 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				SELECT SELF;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						APPLY_SPELL 97 SELF SELF;
+						STOP;
+					)
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="99" Name="Stasis Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>3000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>33</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Stuns a targeted creep for 3 seconds.</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="100" Name="Stasis">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>98</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>40000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>33</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Stuns a targeted creep for 3 seconds. 40 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				SELECT SELF;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						APPLY_SPELL 99 SELF SELF;
+						STOP;
+					)
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="101" Name="Temporal Distortion">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>94</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Grants this tower the Temporal Distortion ability, which slows the movement
+		speed of all creeps and projectiles, as well as the attack speed of all towers, 
+		within 192px. Lasts for 30 seconds. Triggered ability.\n\n&amp;cffff0000Level 
+		4&amp;cff000000 - 50% reduced speed, 1 charge\n&amp;cffff0000Level 5&amp;cff000000 -
+		75% reduced speed, 1 charge
+		</Text>
+		<Script>LEARN_SPELL 105;</Script>
+	</Spell>
+	<Spell ID="102" Name="Temporal Distortion Tower Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows this tower's attack speed by 50% for 30 seconds.</Text>
+		<Script>MOD SELF TOWER_BAT_BONUS 50 PERCENT;</Script>
+	</Spell>
+	<Spell ID="103" Name="Temporal Distortion Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows this projectile's movement speed by 50% for 30 seconds.
+		</Text>
+		<Script>MOD SELF PROJ_SPEED_BONUS -50 PERCENT;</Script>
+	</Spell>
+	<Spell ID="104" Name="Temporal Distortion Creep Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows this creep's movement speed by 50% for 30 seconds.</Text>
+		<Script>MOD SELF CREEP_SPEED_BONUS -50 PERCENT;</Script>
+	</Spell>
+	<Spell ID="105" Name="Temporal Distortion">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Triggered ability. Slows the movement speed of all creeps and projectiles, as 
+		well as the attack speed of all towers, within 192px by 50%. Lasts for 30 seconds.
+		</Text>
+		<Script>ADD_GOBJECT 6 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));</Script>
+	</Spell>
+	<Spell ID="106" Name="Temporal Distortion Tower Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows this tower's attack speed by 75% for 30 seconds.</Text>
+		<Script>MOD SELF TOWER_BAT_BONUS 75 PERCENT;</Script>
+	</Spell>
+	<Spell ID="107" Name="Temporal Distortion Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows this projectile's movement speed by 75% for 30 seconds.
+		</Text>
+		<Script>MOD SELF PROJ_SPEED_BONUS -75 PERCENT;</Script>
+	</Spell>
+	<Spell ID="108" Name="Temporal Distortion Creep Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows this creep's movement speed by 75% for 30 seconds.</Text>
+		<Script>MOD SELF CREEP_SPEED_BONUS -75 PERCENT;</Script>
+	</Spell>
+	<Spell ID="109" Name="Temporal Distortion">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>105</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>34</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Triggered ability. Slows the movement speed of all creeps and projectiles, as 
+		well as the attack speed of all towers, within 192px by 75%. Lasts for 30 seconds.
+		</Text>
+		<Script>ADD_GOBJECT 7 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));</Script>
+	</Spell>
+	<Spell ID="110" Name="Chronosphere">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>101</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>35</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Grants this tower the Chronosphere ability, which creates a rip in spacetime
+		causing all creeps and projectiles within 128px to become trapped for its duration.
+		\n\n&amp;cffff0000Level 5&amp;cff000000 - 5 sec. duration, 1 charge
+		</Text>
+		<Script>LEARN_SPELL 113;</Script>
+	</Spell>
+	<Spell ID="111" Name="Chronosphere Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>35</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Creates a rip in spacetime causing all projectiles within 128px 
+		to become trapped for 5 seconds.
+		</Text>
+		<Script>SET SELF PROJ_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="112" Name="Chronosphere Creep Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>35</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Creates a rip in spacetime causing all creeps within a 128px 
+		to become trapped for 5 seconds.
+		</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;</Script>
+	</Spell>
+	<Spell ID="113" Name="Chronosphere">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>35</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Triggered ability. Creates a rip in spacetime causing all creeps and projectiles
+		within 128px to become trapped for 5 seconds.
+		</Text>
+		<Script>ADD_GOBJECT 8 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));</Script>
+	</Spell>
+	<Spell ID="114" Name="Treble Cleft">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>79</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>36</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Grants this tower the Treble Cleft ability, which deals either percent damage
+		or fixed damage to nearby creeps, whichever is greater. Damage is dealt in waves
+		that extend from this tower. Active ability.\n\n&amp;cffff0000Level 2&amp;cff000000
+		- 1%/300 damage, 96px range\n&amp;cffff0000Level 3&amp;cff000000 - 2%/600 damage,
+		112px range\n&amp;cffff0000Level 4&amp;cff000000 - 3%/900 damage, 128px range
+		\n&amp;cffff0000Level 5&amp;cff000000 - 4%/1200 damage, 144px range
+		</Text>
+		<Script>LEARN_SPELL 115;
+			SHOW_SPELL 79 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="115" Name="Treble Cleft">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>36</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Active ability. Deals 1% max. HP damage or 300 damage, whichever is greater, to
+		creeps in a wave that extends 96px from this tower.
+		</Text>
+		<Script>ONFIRE
+			(
+				ADD_GOBJECT 9 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="116" Name="Treble Cleft">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>115</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>36</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Active ability. Deals 2% max. HP damage or 600 damage, whichever is greater, to
+		creeps in a wave that extends 112px from this tower.
+		</Text>
+		<Script>MOD SELF TOWER_RANGE_FLAT 16 FLAT;
+			ONFIRE
+			(
+				ADD_GOBJECT 10 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="117" Name="Treble Cleft">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>116</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>36</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Active ability. Deals 3% max. HP damage or 900 damage, whichever is greater, to
+		creeps in a wave that extends 128px from this tower.
+		</Text>
+		<Script>MOD SELF TOWER_RANGE_FLAT 32 FLAT;
+			ONFIRE
+			(
+				ADD_GOBJECT 11 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="118" Name="Treble Cleft">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>117</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>36</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Active ability. Deals 4% max. HP damage or 1200 damage, whichever is greater, to
+		creeps in a wave that extends 144px from this tower.
+		</Text>
+		<Script>MOD SELF TOWER_RANGE_FLAT 48 FLAT;
+			ONFIRE
+			(
+				ADD_GOBJECT 12 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="119" Name="Discord">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>114</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>37</Icon>
+		<Hotkey>D</Hotkey>
+		<Text>Grants this tower the Discord ability, which deals global percent damage every
+		time this tower fires. Damage dealt cannot pass a certain amount. Passive ability.\n
+		\n&amp;cffff0000Level 3&amp;cff000000 - 3% damage, 3000 maximum\n&amp;cffff0000Level
+		4&amp;cff000000 - 4% damage, 6000 maximum\n&amp;cffff0000Level 5&amp;cff000000 - 5%
+		damage, 10000 maximum
+		</Text>
+		<Script>LEARN_SPELL 120;</Script>
+	</Spell>
+	<Spell ID="120" Name="Discord">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>37</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Whenever this tower fires, all creeps on the page take damage
+		equal to 3% of their maximum HP, up to a maximum of 3000 damage.
+		</Text>
+		<Script>ONFIRE
+			(
+				FORALL CREEP
+				(
+					DAMAGE_CREEP SELF (MAX_FIT ((GET CREEP_MAX_HITPOINTS SELF) * 0.03) 3000) 0;
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="121" Name="Discord">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>120</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>37</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Whenever this tower fires, all creeps on the page take damage
+		equal to 4% of their maximum HP, up to a maximum of 6000 damage.
+		</Text>
+		<Script>ONFIRE
+			(
+				FORALL CREEP
+				(
+					DAMAGE_CREEP SELF (MAX_FIT ((GET CREEP_MAX_HITPOINTS SELF) * 0.04) 6000) 0;
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="122" Name="Discord">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>121</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>37</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Whenever this tower fires, all creeps on the page take damage
+		equal to 5% of their maximum HP, up to a maximum of 10000 damage.
+		</Text>
+		<Script>ONFIRE
+			(
+				FORALL CREEP
+				(
+					DAMAGE_CREEP SELF (MAX_FIT ((GET CREEP_MAX_HITPOINTS SELF) * 0.05) 10000) 0;
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="123" Name="Resonance">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>119</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>38</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Grants this tower the Resonance ability, which reduces the armor of all creeps
+		to zero, and doubles the damage that they take for a short amount of time. During
+		that time, all creeps also move faster. Only affects creeps that are currently on the
+		page. Lasts for 15 sec. Does not stack with Resonance. Triggered ability.\n
+		\n&amp;cffff0000Level 4&amp;cff000000 - +100% speed, 1 charge\n&amp;cffff0000Level 
+		5&amp;cff000000 - +50% speed, 2 charges
+		</Text>
+		<Script>LEARN_SPELL 125;</Script>
+	</Spell>
+	<Spell ID="124" Name="Resonance Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>15000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>38</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Reduces the armor of all creeps to zero, and doubles the
+		damage that they take for 15 seconds. During that time, all creeps also move 100%
+		faster. Only affects creeps that are currently on the page.
+		</Text>
+		<Script>SET SELF CREEP_ARMOR_BONUS 0 FLAT;
+			MOD SELF CREEP_DAMAGE_BONUS 100 PERCENT;
+			MOD SELF CREEP_SPEED_BONUS 100 PERCENT;
+		</Script>
+	</Spell>
+	<Spell ID="125" Name="Resonance">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>38</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Triggered ability. Reduces the armor of all creeps to zero, and doubles the
+		damage that they take for 15 seconds. During that time, all creeps also move 100%
+		faster. Only affects creeps that are currently on the page. 30 second cooldown.
+		</Text>
+		<Script>SELECT SELF;
+			FORALL CREEP
+			(
+				APPLY_SPELL 124 SELF SELECTION;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="126" Name="Resonance Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>15000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>38</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Reduces the armor of all creeps to zero, and doubles the
+		damage that they take for 15 seconds. During that time, all creeps also move 50%
+		faster. Only affects creeps that are currently on the page.
+		</Text>
+		<Script>SET SELF CREEP_ARMOR_BONUS 0 FLAT;
+			MOD SELF CREEP_DAMAGE_BONUS 100 PERCENT;
+			MOD SELF CREEP_SPEED_BONUS 50 PERCENT;
+		</Script>
+	</Spell>
+	<Spell ID="127" Name="Resonance">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>125</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>2</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>38</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Triggered ability. Reduces the armor of all creeps to zero, and doubles the
+		damage that they take for 15 seconds. During that time, all creeps also move 50%
+		faster. Only affects creeps that are currently on the page.
+		</Text>
+		<Script>SELECT SELF;
+			FORALL CREEP
+			(
+				APPLY_SPELL 126 SELF SELECTION;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="128" Name="Grand Carillon">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>123</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>39</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Grants this tower the Grand Carillon ability, which inflicts damage to all
+		creeps on the page equal to a percentage of their maximum HP. If the creep's current
+		HP is less than this percentage however, Grand Carillon deals no damage. 5 min.
+		cooldown. Triggered ability.\n\n&amp;cffff0000Level 5&amp;cff000000 - 35% max. HP 
+		damage
+		</Text>
+		<Script>LEARN_SPELL 129;</Script>
+	</Spell>
+	<Spell ID="129" Name="Grand Carillon">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>30000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>39</Icon>
+		<Hotkey>C</Hotkey>
+		<Text>Triggered ability. Inflicts damage to all creeps on the field equal to 35% of
+		their maximum HP. If the creep has less than 35% of its maximum HP however, it takes
+		no damage from this effect. 5 minute cooldown.
+		</Text>
+		<Script>SELECT SELF;
+			FORALL CREEP
+			(
+				IF ((GET CREEP_HITPOINTS SELF) &gt;= ((GET CREEP_MAX_HITPOINTS SELF) * 0.35))
+				(
+					DAMAGE_CREEP SELF ((GET CREEP_MAX_HITPOINTS SELF) * 0.35) (GET ARMOR SELF);
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="130" Name="Updraft">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>1</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>5000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>40</Icon>
+		<Hotkey>D</Hotkey>
+		<Text>Triggered ability. Instantly deals 1 to 637 + normal damage to a single creep.
+		5 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				SELECT SELF;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						DAMAGE_CREEP SELF (RAND 1 ((GET DAMAGE SELECTION) + 637)) (GET ARMOR SELF);
+						STOP;
+					)
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="131" Name="Thunderbolt">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>130</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>41</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Grants this tower the Thunderbolt ability, which deals normal damage plus a
+		fixed amount to creeps in branching lines that extend from this tower. 5 sec. 
+		cooldown. Replaces Updraft. Triggered ability.\n\n&amp;cffff0000Level 
+		2&amp;cff000000 - +116 damage\n&amp;cffff0000Level 3&amp;cff000000 - +208 damage
+		\n&amp;cffff0000Level 4&amp;cff000000 - +410 damage\n&amp;cffff0000Level 
+		5&amp;cff000000 - +867 damage
+		</Text>
+		<Script>LEARN_SPELL 132;
+			SHOW_SPELL 130 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="132" Name="Thunderbolt">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>5000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>41</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Triggered ability. Instantly deals 116 + normal damage to creeps in branching
+		lines that extend from this tower. 5 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ANIMATE 16 (GET POSITION MOUSE);
+				ADD_GOBJECT 13 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 14 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 15 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 16 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="133" Name="Thunderbolt">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>3</Level>
+		<Prerequisite>132</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>5000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>41</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Triggered ability. Instantly deals 208 + normal damage to creeps in branching
+		lines that extend from this tower. 5 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ANIMATE 16 (GET POSITION MOUSE);
+				ANIMATE 16 (GET POSITION MOUSE);
+				ADD_GOBJECT 17 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 18 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 19 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 20 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="134" Name="Thunderbolt">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>133</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>5000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>41</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Triggered ability. Instantly deals 410 + normal damage to creeps in branching
+		lines that extend from this tower. 5 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ANIMATE 16 (GET POSITION MOUSE);
+				ANIMATE 16 (GET POSITION MOUSE);
+				ANIMATE 16 (GET POSITION MOUSE);
+				ADD_GOBJECT 21 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 22 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 23 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 24 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="135" Name="Thunderbolt">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>134</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>5000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>41</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Triggered ability. Instantly deals 867 + normal damage to creeps in branching
+		lines that extend from this tower. 5 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ANIMATE 16 (GET POSITION MOUSE);
+				ANIMATE 16 (GET POSITION MOUSE);
+				ANIMATE 16 (GET POSITION MOUSE);
+				ANIMATE 16 (GET POSITION MOUSE);
+				ADD_GOBJECT 25 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 26 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 27 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+				ADD_GOBJECT 28 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="136" Name="Shower of Lightning">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>131</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>42</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Grants this tower the Shower of Lightning ability, which deals normal damage 
+		plus a fixed amount every second for 4 seconds to all creeps within a certain 
+		distance from the targeted location. 10 sec. cooldown. Triggered ability.\n
+		\n&amp;cffff0000Level 3&amp;cff000000 - +910 damage/sec., 64px radius
+		\n&amp;cffff0000Level 4&amp;cff000000 - +1263 damage/sec., 80px radius
+		\n&amp;cffff0000Level 5&amp;cff000000 - +1972 damage/sec., 96px radius
+		</Text>
+		<Script>LEARN_SPELL 137;</Script>
+	</Spell>
+	<Spell ID="137" Name="Shower of Lightning">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>10000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>42</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Triggered ability. Deals 910 + normal damage every second to all creeps within
+		64px of a targeted area. Lasts for 4 seconds. 10 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ADD_GOBJECT 29 (POINT2D (GET POS_X MOUSE) (GET POS_Y MOUSE));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="138" Name="Shower of Lightning">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>137</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>10000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>42</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Triggered ability. Deals 1263 + normal damage every second to all creeps within
+		80px of a targeted area. Lasts for 4 seconds. 10 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ADD_GOBJECT 30 (POINT2D (GET POS_X MOUSE) (GET POS_Y MOUSE));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="139" Name="Shower of Lightning">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>138</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>10000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>42</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Triggered ability. Deals 1972 + normal damage every second to all creeps within
+		96px of a targeted area. Lasts for 4 seconds. 10 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ADD_GOBJECT 31 (POINT2D (GET POS_X MOUSE) (GET POS_Y MOUSE));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="140" Name="Turbulence">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>136</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>43</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Grants this tower the Turbulence ability, which instantly deals normal damage
+		plus a fixed amount to all creeps within a certain distance from the targeted 
+		location. 30 sec. cooldown. Triggered ability.\n\n&amp;cffff0000Level 4&amp;cff000000 
+		- +3531 damage, 192px radius\n&amp;cffff0000Level 5&amp;cff000000 - +5964 damage, 
+		256px radius
+		</Text>
+		<Script>LEARN_SPELL 141;</Script>
+	</Spell>
+	<Spell ID="141" Name="Turbulence">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>30000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>43</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Instantly deals 3531 + normal damage to all creeps within
+		192px of a targeted area. 30 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ADD_GOBJECT 32 (POINT2D (GET POS_X MOUSE) (GET POS_Y MOUSE));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="142" Name="Turbulence">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>141</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>30000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>43</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Instantly deals 5964 + normal damage to all creeps within
+		256px of a targeted area. 30 second cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ADD_GOBJECT 33 (POINT2D (GET POS_X MOUSE) (GET POS_Y MOUSE));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="143" Name="Letum Ventus">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>140</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>44</Icon>
+		<Hotkey>V</Hotkey>
+		<Text>Grants this tower the Letum Ventus ability, which randomly casts Turbulence 
+		across the page. This spell has no effect on the actual Turbulence spell. 5 min. 
+		cooldown. Triggered ability.\n\n&amp;cffff0000Level 5&amp;cff000000 - 25 casts, Lv5 
+		Turbulence
+		</Text>
+		<Script>LEARN_SPELL 144;</Script>
+	</Spell>
+	<Spell ID="144" Name="Letum Ventus">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>300000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>44</Icon>
+		<Hotkey>V</Hotkey>
+		<Text>Triggered ability. Randomly casts Turbulence Lv5 across the page 25 times. 
+		This spell has no effect on the actual Turbulence Lv5 spell. 5 minute cooldown.
+		</Text>
+		<Script>FOR 25 (ADD_GOBJECT 33 (POINT2D (RAND 113 685) (RAND 115 687)));
+		</Script>
+	</Spell>
+	<Spell ID="145" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>130</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>45</Icon>
+		<Hotkey>G</Hotkey>
+		<Text>Grants this tower the Glacial Spike ability, which allows this tower to fire
+		slow-moving, piercing projectiles that cannot follow creeps. When these projectiles
+		hit a creep, that creep gains armor and loses movement speed for 10 seconds. Creeps 
+		cannot be slowed more than 50% by any level of Glacial Spike, but there is no limit 
+		to the amount of armor gained. Replaces Updraft. Active ability.\n
+		\n&amp;cffff0000Level 2&amp;cff000000 - +1 armor/-1% move speed\n&amp;cffff0000Level
+		3&amp;cff000000 - +2 armor/-1% move speed\n&amp;cffff0000Level 4&amp;cff000000 - +3 
+		armor/-1% move speed\n&amp;cffff0000Level 5&amp;cff000000 - +4 armor/-1% move speed
+		</Text>
+		<Script>LEARN_SPELL 149;
+			SHOW_SPELL 130 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="146" Name="Glacial Spike Slow Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>10000</Duration>
+		<Stacking>50</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows creep movement speed by 1% for 10 seconds, up to a 
+		maximum of 50%.
+		</Text>
+		<Script>MOD SELF CREEP_SPEED_BONUS -0.01 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="147" Name="Glacial Spike Armor Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>10000</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases creep armor by 1 for 10 seconds.
+		</Text>
+		<Script>MOD SELF CREEP_ARMOR_FLAT 1 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="148" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NONE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Fires slow-moving but piercing projectiles that cannot follow
+		creeps. However, these projectiles increase creep armor by 1 and slow enemy creeps 
+		that they hit by 1%, up to a maximum of 50%, for 10 seconds.
+		</Text>
+		<Script>SET SELF PROJ_PHASE_PERCENT 100 FLAT;
+			ONHIT
+			(
+				APPLY_SPELL 147 ATTACK_TARGET SELF;
+				APPLY_SPELL 146 ATTACK_TARGET SELF;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="149" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NONE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey>G</Hotkey>
+		<Text>Active ability. Fires slow-moving but piercing projectiles that cannot follow
+		creeps. However, these projectiles increase creep armor by 1 and slow enemy creeps 
+		that they hit by 1%, up to a maximum of 50%, for 10 seconds.
+		</Text>
+		<Script>SET_PROJECTILE 5;
+			APPLY_SPELL 148 TOWER_PROJECTILE SELF;
+		</Script>
+	</Spell>
+	<Spell ID="150" Name="Glacial Spike Armor Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>10000</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases creep armor by 2 for 10 seconds.
+		</Text>
+		<Script>MOD SELF CREEP_ARMOR_FLAT 2 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="151" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NONE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Fires slow-moving but piercing projectiles that cannot follow
+		creeps. However, these projectiles increase creep armor by 2 and slow enemy creeps 
+		that they hit by 1%, up to a maximum of 50%, for 10 seconds.
+		</Text>
+		<Script>SET SELF PROJ_PHASE_PERCENT 100 FLAT;
+			ONHIT
+			(
+				APPLY_SPELL 150 ATTACK_TARGET SELF;
+				APPLY_SPELL 146 ATTACK_TARGET SELF;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="152" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>149</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NONE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey>G</Hotkey>
+		<Text>Active ability. Fires slow-moving but piercing projectiles that cannot follow
+		creeps. However, these projectiles increase creep armor by 2 and slow enemy creeps 
+		that they hit by 1%, up to a maximum of 50%, for 10 seconds.
+		</Text>
+		<Script>SET_PROJECTILE 5;
+			APPLY_SPELL 151 TOWER_PROJECTILE SELF;
+		</Script>
+	</Spell>
+	<Spell ID="153" Name="Glacial Spike Armor Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>10000</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases creep armor by 3 for 10 seconds.
+		</Text>
+		<Script>MOD SELF CREEP_ARMOR_FLAT 3 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="154" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NONE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Fires slow-moving but piercing projectiles that cannot follow
+		creeps. However, these projectiles increase creep armor by 3 and slow enemy creeps 
+		that they hit by 1%, up to a maximum of 50%, for 10 seconds.
+		</Text>
+		<Script>SET SELF PROJ_PHASE_PERCENT 100 FLAT;
+			ONHIT
+			(
+				APPLY_SPELL 153 ATTACK_TARGET SELF;
+				APPLY_SPELL 146 ATTACK_TARGET SELF;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="155" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>152</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NONE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey>G</Hotkey>
+		<Text>Active ability. Fires slow-moving but piercing projectiles that cannot follow
+		creeps. However, these projectiles increase creep armor by 3 and slow enemy creeps 
+		that they hit by 1%, up to a maximum of 50%, for 10 seconds.
+		</Text>
+		<Script>SET_PROJECTILE 5;
+			APPLY_SPELL 154 TOWER_PROJECTILE SELF;
+		</Script>
+	</Spell>
+	<Spell ID="156" Name="Glacial Spike Armor Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>10000</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases creep armor by 4 for 10 seconds.
+		</Text>
+		<Script>MOD SELF CREEP_ARMOR_FLAT 4 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="157" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NONE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Fires slow-moving but piercing projectiles that cannot follow
+		creeps. However, these projectiles increase creep armor by 4 and slow enemy creeps 
+		that they hit by 1%, up to a maximum of 50%, for 10 seconds.
+		</Text>
+		<Script>SET SELF PROJ_PHASE_PERCENT 100 FLAT;
+			ONHIT
+			(
+				APPLY_SPELL 156 ATTACK_TARGET SELF;
+				APPLY_SPELL 146 ATTACK_TARGET SELF;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="158" Name="Glacial Spike">
+		<Visible>YES</Visible>
+		<Mode>ACTIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>155</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NONE</Stacking>
+		<Icon>45</Icon>
+		<Hotkey></Hotkey>
+		<Text>Active ability. Fires slow-moving but piercing projectiles that cannot follow
+		creeps. However, these projectiles increase creep armor by 4 and slow enemy creeps 
+		that they hit by 1%, up to a maximum of 50%, for 10 seconds.
+		</Text>
+		<Script>SET_PROJECTILE 5;
+			APPLY_SPELL 157 TOWER_PROJECTILE SELF;
+		</Script>
+	</Spell>
+	<Spell ID="159" Name="Blizzard">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>145</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>46</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Grants this tower the Blizzard ability, which creates a snowstorm on the page
+		that damages and slows down creeps caught in its path. The storm starts out weak, 
+		but becomes more damaging over time. Heavily armored creeps are slowed more than
+		lightly armored ones, but the slowing effect cannot exceed 75% regardless of armor.
+		Lasts for 10 seconds. 1 min. cooldown. Triggered ability.\n\n&amp;cffff0000Level 
+		3&amp;cff000000 - +163 damage/sec. for 5 sec., -1% move speed per 4 armor
+		\n&amp;cffff0000Level 4&amp;cff000000 - +221 damage/sec. for 6 sec., -1% move speed
+		per 3 armor\n&amp;cffff0000Level 5&amp;cff000000 - +315 damage/sec. for 8 sec., -1%
+		move speed per 2 armor
+		</Text>
+		<Script>LEARN_SPELL 161;
+		</Script>
+	</Spell>
+	<Spell ID="160" Name="Blizzard Slow Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>46</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows the targeted creep by 1% for every 4 points of armor
+		that it has, up to a maximum of 75%.
+		</Text>
+		<Script>MOD SELF CREEP_SPEED_BONUS (-1 * (MAX_FIT (ABS_VAL ((GET ARMOR SELF) / 4)) 75)) PERCENT;
+		</Script>
+	</Spell>
+	<Spell ID="161" Name="Blizzard">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>60000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>46</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Triggered ability. Calls forth a snowstorm that damages and slows down creeps
+		in its wake. The snowstorm is initially weak, but gains 163 damage per second for
+		the first 5 seconds of this spell. Creeps in the storm are also slowed by 1% for 
+		every 4 points of armor that they have, up to a maximum of 75%. Lasts for 10 seconds. 
+		1 minute cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ADD_GOBJECT 34 (POINT2D ((GET POS_X MOUSE) - 80) ((GET POS_Y MOUSE) - 80));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="162" Name="Blizzard Slow Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>46</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows the targeted creep by 1% for every 3 points of armor
+		that it has, up to a maximum of 75%.
+		</Text>
+		<Script>MOD SELF CREEP_SPEED_BONUS (-1 * (MAX_FIT (ABS_VAL ((GET ARMOR SELF) / 3)) 75)) PERCENT;
+		</Script>
+	</Spell>
+	<Spell ID="163" Name="Blizzard">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>161</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>60000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>46</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Triggered ability. Calls forth a snowstorm that damages and slows down creeps
+		in its wake. The snowstorm is initially weak, but gains 221 damage per second for
+		the first 6 seconds of this spell. Creeps in the storm are also slowed by 1% for 
+		every 3 points of armor that they have, up to a maximum of 75%. Lasts for 10 seconds. 
+		1 minute cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ADD_GOBJECT 35 (POINT2D ((GET POS_X MOUSE) - 80) ((GET POS_Y MOUSE) - 80));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="164" Name="Blizzard Slow Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>46</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Slows the targeted creep by 1% for every 2 points of armor
+		that it has, up to a maximum of 75%.
+		</Text>
+		<Script>MOD SELF CREEP_SPEED_BONUS (-1 * (MAX_FIT (ABS_VAL ((GET ARMOR SELF) / 2)) 75)) PERCENT;
+		</Script>
+	</Spell>
+	<Spell ID="165" Name="Blizzard">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>163</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>60000</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>46</Icon>
+		<Hotkey>B</Hotkey>
+		<Text>Triggered ability. Calls forth a snowstorm that damages and slows down creeps
+		in its wake. The snowstorm is initially weak, but gains 315 damage per second for
+		the first 8 seconds of this spell. Creeps in the storm are also slowed by 1% for 
+		every 2 points of armor that they have, up to a maximum of 75%. Lasts for 10 seconds. 
+		1 minute cooldown.
+		</Text>
+		<Script>ONCLICK
+			(
+				ADD_GOBJECT 36 (POINT2D ((GET POS_X MOUSE) - 80) ((GET POS_Y MOUSE) - 80));
+			);
+		</Script>
+	</Spell>
+	<Spell ID="166" Name="Frostbite">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>159</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>47</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Grants this tower the Frostbite ability, which deals normal damage plus an
+		additional amount to nearby creeps every second. Heavily armored creeps are damaged 
+		much more than lightly armored ones. Passive ability.\n\n&amp;cffff0000Level 
+		4&amp;cff000000 - 5x multiplier, 64px radius\n&amp;cffff0000Level 5&amp;cff000000 - 
+		10x multiplier, 96px radius
+		</Text>
+		<Script>LEARN_SPELL 167;
+		</Script>
+	</Spell>
+	<Spell ID="167" Name="Frostbite">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>47</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. All creeps within 64px from this tower take damage equal to 
+		their armor value + normal damage x5 every second.
+		</Text>
+		<Script>ADD_GOBJECT 37 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+		</Script>
+	</Spell>
+	<Spell ID="168" Name="Frostbite">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>167</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>47</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. All creeps within 96px from this tower take damage equal to 
+		their armor value + normal damage x10 every second.
+		</Text>
+		<Script>REMOVE_GOBJECT 37 SELF;
+			ADD_GOBJECT 38 (POINT2D ((GET POS_X SELF) + 16) ((GET POS_Y SELF) + 16));
+		</Script>
+	</Spell>
+	<Spell ID="169" Name="Fimbulwinter">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>166</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>48</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Grants this tower the Fimbulwinter ability, which freezes all creeps that
+		are currently on the page for 30 seconds. Creeps frozen by Fimbulwinter gain a large
+		amount of armor for the duration.\n\n&amp;cffff0000Level 5&amp;cff000000 - +100
+		armor, 1 charge
+		</Text>
+		<Script>LEARN_SPELL 171;
+		</Script>
+	</Spell>
+	<Spell ID="170" Name="Fimbulwinter Freeze Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>30000</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>48</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This creep is frozen for 30 seconds, preventing its movement.
+		In addition, it gains 100 armor for the duration.
+		</Text>
+		<Script>SET SELF CREEP_CAN_MOVE FALSE FLAT;
+			MOD SELF CREEP_ARMOR_FLAT 100 FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="171" Name="Fimbulwinter">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>48</Icon>
+		<Hotkey>F</Hotkey>
+		<Text>Triggered ability. Freezes all creeps on the page for 30 seconds, preventing
+		their movement. In addition, creeps that are frozen by this effect gain 100 armor 
+		for the duration.
+		</Text>
+		<Script>SELECT SELF;
+			FORALL CREEP
+			(
+				APPLY_SPELL 170 SELF SELECTION;
+			);
+		</Script>
+	</Spell>
+	<Spell ID="172" Name="Fade">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>1</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>49</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This tower will not obstruct creep movement.
+		</Text>
+		<Script>SET SELF TOWER_GHOST_STATE TRUE FLAT;
+		</Script>
+	</Spell>
+	<Spell ID="173" Name="No Man's Land">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>2</Level>
+		<Prerequisite>172</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>50</Icon>
+		<Hotkey>D</Hotkey>
+		<Text>Grants this tower the No Man's Land ability, which allows creeps to move 
+		through it. In addition, creeps that walk over this tower will take normal damage
+		plus an additional amount every second that they remain.  Replaces Fade. Passive 
+		ability.\n\n&amp;cffff0000Level 2&amp;cff000000 - +116 damage/sec.
+		\n&amp;cffff0000Level 3&amp;cff000000 - +269 damage/sec.\n&amp;cffff0000Level 
+		4&amp;cff000000 - +695 damage/sec.\n&amp;cffff0000Level 5&amp;cff000000 - +1928
+		damage/sec.
+		</Text>
+		<Script>LEARN_SPELL 174;
+			SHOW_SPELL 172 FALSE;
+		</Script>
+	</Spell>
+	<Spell ID="174" Name="No Man's Land">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>2</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>50</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This tower will not obstruct creep movement. In addition,
+		creeps that walk over this tower will take 116 + normal damage every second, as long
+		as they remain.
+		</Text>
+		<Script>SET SELF TOWER_GHOST_STATE TRUE FLAT;
+			ADD_GOBJECT 39 (POINT2D ((GET POS_X SELF) + 1) ((GET POS_Y SELF) + 1));
+		</Script>
+	</Spell>
+	<Spell ID="175" Name="No Man's Land">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>174</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>50</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This tower will not obstruct creep movement. In addition,
+		creeps that walk over this tower will take 269 + normal damage every second, as long
+		as they remain.
+		</Text>
+		<Script>SET SELF TOWER_GHOST_STATE TRUE FLAT;
+			REMOVE_GOBJECT 39 SELF;
+			ADD_GOBJECT 40 (POINT2D ((GET POS_X SELF) + 1) ((GET POS_Y SELF) + 1));
+		</Script>
+	</Spell>
+	<Spell ID="176" Name="No Man's Land">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>175</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>50</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This tower will not obstruct creep movement. In addition,
+		creeps that walk over this tower will take 695 + normal damage every second, as long
+		as they remain.
+		</Text>
+		<Script>SET SELF TOWER_GHOST_STATE TRUE FLAT;
+			REMOVE_GOBJECT 40 SELF;
+			ADD_GOBJECT 41 (POINT2D ((GET POS_X SELF) + 1) ((GET POS_Y SELF) + 1));
+		</Script>
+	</Spell>
+	<Spell ID="177" Name="No Man's Land">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>176</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>50</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. This tower will not obstruct creep movement. In addition,
+		creeps that walk over this tower will take 1928 + normal damage every second, as long
+		as they remain.
+		</Text>
+		<Script>SET SELF TOWER_GHOST_STATE TRUE FLAT;
+			REMOVE_GOBJECT 41 SELF;
+			ADD_GOBJECT 42 (POINT2D ((GET POS_X SELF) + 1) ((GET POS_Y SELF) + 1));
+		</Script>
+	</Spell>
+	<Spell ID="178" Name="Ransom Lord">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>173</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>51</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Grants this tower the Ransom Lord ability, which greatly increases the bounty 
+		of any creep that is currently on the tower. When the creep leaves the tower, its
+		bounty returns to normal. Passive ability.\n\n&amp;cffff0000Level 3&amp;cff000000 -
+		+100% bounty\n&amp;cffff0000Level 4&amp;cff000000 - +200% bounty
+		\n&amp;cffff0000Level 5&amp;cff000000 - +300% bounty
+		</Text>
+		<Script>LEARN_SPELL 180;</Script>
+	</Spell>
+	<Spell ID="179" Name="Ransom Lord Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>51</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases this creep's bounty by 100%.</Text>
+		<Script>MOD SELF CREEP_BOUNTY_BONUS 100 PERCENT;</Script>
+	</Spell>
+	<Spell ID="180" Name="Ransom Lord">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>51</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Creeps on this tower grant 100% more ink when killed. This
+		effect disappears when the creep is no longer on the tower.</Text>
+		<Script>ADD_GOBJECT 43 (POINT2D ((GET POS_X SELF) + 1) ((GET POS_Y SELF) + 1));
+		</Script>
+	</Spell>
+	<Spell ID="181" Name="Ransom Lord Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>51</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases this creep's bounty by 200%.</Text>
+		<Script>MOD SELF CREEP_BOUNTY_BONUS 200 PERCENT;</Script>
+	</Spell>
+	<Spell ID="182" Name="Ransom Lord">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>180</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>51</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Creeps on this tower grant 200% more ink when killed. This
+		effect disappears when the creep is no longer on the tower.</Text>
+		<Script>REMOVE_GOBJECT 43 SELF;
+			ADD_GOBJECT 44 (POINT2D ((GET POS_X SELF) + 1) ((GET POS_Y SELF) + 1));
+		</Script>
+	</Spell>
+	<Spell ID="183" Name="Ransom Lord Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>51</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases this creep's bounty by 300%.</Text>
+		<Script>MOD SELF CREEP_BOUNTY_BONUS 300 PERCENT;</Script>
+	</Spell>
+	<Spell ID="184" Name="Ransom Lord">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>182</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>INFINITE</Stacking>
+		<Icon>51</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Creeps on this tower grant 300% more ink when killed. This
+		effect disappears when the creep is no longer on the tower.</Text>
+		<Script>REMOVE_GOBJECT 44 SELF;
+			ADD_GOBJECT 45 (POINT2D ((GET POS_X SELF) + 1) ((GET POS_Y SELF) + 1));
+		</Script>
+	</Spell>
+	<Spell ID="185" Name="Give and Take">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>4</Level>
+		<Prerequisite>178</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>52</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Grants this tower the Give and Take ability, which selects a creep on the
+		page. That creep gains maximum HP and current HP equal to the combined maximum HP of
+		every other creep on the page. The maximum HP and current HP of every other creep on
+		the page is reduced. Triggered ability.\n\n&amp;cffff0000Level 4&amp;cff000000 - 50%
+		reduced HP, 1 charge\n&amp;cffff0000Level 5&amp;cff000000 - 75% reduced HP, 1 charge
+		</Text>
+		<Script>LEARN_SPELL 186;</Script>
+	</Spell>
+	<Spell ID="186" Name="Give and Take">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>52</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Increases the maximum and current HP of the targeted creep
+		by an amount equal to the combined maximum HP of every creep on the page. Also, the 
+		maximum HP of every other creep on the page is permanently reduced by 50%.
+		</Text>
+		<Script>ONCLICK
+			(
+				VARIABLE MAX_HP;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						SELECT SELF;
+						FORALL CREEP
+						(
+							MAXHP = (GET CREEP_MAX_HITPOINTS SELF);
+							MOD SELECTION CREEP_HITPOINTS MAX_HP FLAT;
+							MOD SELECTION CREEP_MAX_HITPOINTS MAX_HP FLAT;
+							IF (SELECTION != SELF)
+							(
+								MOD SELF CREEP_MAX_HITPOINTS -50 PERCENT;
+							);
+						);
+						STOP;
+					);
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="187" Name="Give and Take">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>186</Prerequisite>
+		<Automatic>YES</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>52</Icon>
+		<Hotkey>T</Hotkey>
+		<Text>Triggered ability. Increases the maximum and current HP of the targeted creep
+		by an amount equal to the combined maximum HP of every creep on the page. Also, the 
+		maximum HP of every other creep on the page is permanently reduced by 75%.
+		</Text>
+		<Script>ONCLICK
+			(
+				VARIABLE MAX_HP;
+				FORALL CREEP
+				(
+					IF ((GET INTERSECT_POINT SELF (GET POSITION MOUSE)) == TRUE)
+					(
+						SELECT SELF;
+						FORALL CREEP
+						(
+							MAX_HP = (GET CREEP_MAX_HITPOINTS SELF);
+							MOD SELECTION CREEP_HITPOINTS MAX_HP FLAT;
+							MOD SELECTION CREEP_MAX_HITPOINTS MAX_HP FLAT;
+							IF (SELECTION != SELF)
+							(
+								MOD SELF CREEP_MAX_HITPOINTS -75 PERCENT;
+							);
+						);
+						STOP;
+					);
+				);
+			);
+		</Script>
+	</Spell>
+	<Spell ID="188" Name="Summary Execution">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>5</Level>
+		<Prerequisite>185</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>53</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Grants this tower the Summary Execution ability, which allows this tower to
+		instantly kill the creep with the highest current HP on the page. Afterwards, all
+		remaining creeps on the page take additional damage, but move faster as well.\n
+		\n&amp;cffff0000Level 5&amp;cff000000 - +100% damage, +150% move speed, 1 charge
+		</Text>
+		<Script>LEARN_SPELL 189;</Script>
+	</Spell>
+	<Spell ID="189" Name="Summary Execution">
+		<Visible>YES</Visible>
+		<Mode>TRIGGERED</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<Category>NONE</Category>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>1</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Icon>53</Icon>
+		<Hotkey>E</Hotkey>
+		<Text>Triggered ability. Instantly kills the creep with the highest current HP on
+		the page, which sends all other creeps into a panic. These creeps take 100% more
+		damage from all sources, but move 150% faster.
+		</Text>
+		<Script>VARIABLE HIGHEST_HP = 0;
+			FORALL CREEP
+			(
+				MOD SELF CREEP_SPEED_BONUS 150 PERCENT;
+				MOD SELF CREEP_DAMAGE_BONUS 100 PERCENT;
+				IF ((GET CREEP_HITPOINTS SELF) > HIGHEST_HP)
+				(
+					SELECT SELF;
+					HIGHEST_HP = (GET CREEP_HITPOINTS SELF);
+				);
+			);
+			DAMAGE_CREEP SELECTION (GET CREEP_MAX_HITPOINTS SELECTION) (GET ARMOR SELECTION);
+		</Script>
+	</Spell>
+</SpellData>

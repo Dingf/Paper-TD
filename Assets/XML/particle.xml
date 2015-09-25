@@ -1,0 +1,816 @@
+<?xml version="1.0"?>
+
+<ParticleData version="1.0">
+	<ParticleEmitter ID="0" Name="Null">
+		<Surface></Surface>
+		<ParticleLimit></ParticleLimit>
+		<EmitterDuration></EmitterDuration>
+		<EmitsPerSec></EmitsPerSec>
+		<EmitsPerSecVar></EmitsPerSecVar>
+		<ParticlesPerEmit></ParticlesPerEmit>
+		<ParticlesPerEmitVar></ParticlesPerEmitVar>
+		<ParticleLife></ParticleLife>
+		<ParticleLifeVar></ParticleLifeVar>
+		<SpawnDistanceMin></SpawnDistanceMin>
+		<SpawnDistanceMax></SpawnDistanceMax>
+		<Speed></Speed>
+		<SpeedVar></SpeedVar>
+		<AnimationID></AnimationID>
+		<StartColor></StartColor>
+		<StartColorVar></StartColorVar>
+		<EndColor></EndColor>
+		<EndColorVar></EndColorVar>
+		<Yaw></Yaw>
+		<YawVar></YawVar>
+		<Pitch></Pitch>
+		<PitchVar></PitchVar>
+		<ForceYaw></ForceYaw>
+		<ForcePitch></ForcePitch>
+		<ForceMagnitude></ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="1" Name="Flashflood Lv5">
+		<Surface>8</Surface>
+		<ParticleLimit>100</ParticleLimit>
+		<EmitterDuration>100</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>100</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>250</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>100</Speed>
+		<SpeedVar>50</SpeedVar>
+		<AnimationID>10</AnimationID>
+		<StartColor>160 192 224 240</StartColor>
+		<StartColorVar>32 0 0 15</StartColorVar>
+		<EndColor>0 192 224 240</EndColor>
+		<EndColorVar>0 0 0 15</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>300</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="2" Name="Rupture Lv3">
+		<Surface>9</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>100</EmitterDuration>
+		<EmitsPerSec>25</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>15</ParticlesPerEmit>
+		<ParticlesPerEmitVar>10</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>1000</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>50</Speed>
+		<SpeedVar>25</SpeedVar>
+		<AnimationID>12</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 0 0 0</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>10</ForcePitch>
+		<ForceMagnitude>1000</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="3" Name="Rupture Lv4">
+		<Surface>9</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>100</EmitterDuration>
+		<EmitsPerSec>25</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>50</ParticlesPerEmit>
+		<ParticlesPerEmitVar>40</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>1000</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>100</Speed>
+		<SpeedVar>50</SpeedVar>
+		<AnimationID>12</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 0 0 0</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>10</ForcePitch>
+		<ForceMagnitude>1000</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="4" Name="Rupture Lv5">
+		<Surface>9</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>100</EmitterDuration>
+		<EmitsPerSec>25</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>60</ParticlesPerEmit>
+		<ParticlesPerEmitVar>30</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>500</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>200</Speed>
+		<SpeedVar>100</SpeedVar>
+		<AnimationID>12</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 0 0 0</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>10</ForcePitch>
+		<ForceMagnitude>1000</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="5" Name="Glacial Spike">
+		<Surface>9</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>100</EmitterDuration>
+		<EmitsPerSec>100</EmitsPerSec>
+		<EmitsPerSecVar>50</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>250</ParticleLife>
+		<ParticleLifeVar>1000</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>25</Speed>
+		<SpeedVar>25</SpeedVar>
+		<AnimationID>32</AnimationID>
+		<StartColor>223 255 255 255</StartColor>
+		<StartColorVar>32 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>100</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="6" Name="Glacial Spike Explosion">
+		<Surface>9</Surface>
+		<ParticleLimit>10</ParticleLimit>
+		<EmitterDuration>100</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>150</ParticleLife>
+		<ParticleLifeVar>50</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>10</SpawnDistanceMax>
+		<Speed>500</Speed>
+		<SpeedVar>250</SpeedVar>
+		<AnimationID>32</AnimationID>
+		<StartColor>223 255 255 255</StartColor>
+		<StartColorVar>32 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>350</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="7" Name="Blizzard Snowflakes Lv3">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>25</EmitsPerSec>
+		<EmitsPerSecVar>10</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>800</ParticleLife>
+		<ParticleLifeVar>250</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>300</Speed>
+		<SpeedVar>100</SpeedVar>
+		<AnimationID>34</AnimationID>
+		<StartColor>223 255 255 255</StartColor>
+		<StartColorVar>32 0 0 0</StartColorVar>
+		<EndColor>0 250 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>1000</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="8" Name="Blizzard Motes Lv3">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>100</EmitsPerSec>
+		<EmitsPerSecVar>50</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>650</ParticleLife>
+		<ParticleLifeVar>200</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>400</Speed>
+		<SpeedVar>150</SpeedVar>
+		<AnimationID>35</AnimationID>
+		<StartColor>223 255 255 255</StartColor>
+		<StartColorVar>32 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>300</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="9" Name="Blizzard Mega Motes Lv3">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>25</EmitsPerSec>
+		<EmitsPerSecVar>5</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>200</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>200</Speed>
+		<SpeedVar>50</SpeedVar>
+		<AnimationID>36</AnimationID>
+		<StartColor>64 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>300</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="10" Name="Blizzard Snowflakes Lv4">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>40</EmitsPerSec>
+		<EmitsPerSecVar>25</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>700</ParticleLife>
+		<ParticleLifeVar>250</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>350</Speed>
+		<SpeedVar>175</SpeedVar>
+		<AnimationID>34</AnimationID>
+		<StartColor>223 255 255 255</StartColor>
+		<StartColorVar>32 0 0 0</StartColorVar>
+		<EndColor>0 255 255 250</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>1000</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="11" Name="Blizzard Motes Lv4">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>175</EmitsPerSec>
+		<EmitsPerSecVar>75</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>600</ParticleLife>
+		<ParticleLifeVar>200</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>450</Speed>
+		<SpeedVar>150</SpeedVar>
+		<AnimationID>35</AnimationID>
+		<StartColor>223 255 255 255</StartColor>
+		<StartColorVar>32 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>300</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="12" Name="Blizzard Mega Motes Lv4">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>40</EmitsPerSec>
+		<EmitsPerSecVar>10</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>200</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>200</Speed>
+		<SpeedVar>50</SpeedVar>
+		<AnimationID>36</AnimationID>
+		<StartColor>64 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>300</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="13" Name="Blizzard Snowflakes Lv5">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>50</EmitsPerSec>
+		<EmitsPerSecVar>30</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>600</ParticleLife>
+		<ParticleLifeVar>250</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>400</Speed>
+		<SpeedVar>200</SpeedVar>
+		<AnimationID>34</AnimationID>
+		<StartColor>223 255 255 255</StartColor>
+		<StartColorVar>32 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>1000</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="14" Name="Blizzard Motes Lv5">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>250</EmitsPerSec>
+		<EmitsPerSecVar>150</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>500</ParticleLife>
+		<ParticleLifeVar>200</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>500</Speed>
+		<SpeedVar>200</SpeedVar>
+		<AnimationID>35</AnimationID>
+		<StartColor>223 255 255 255</StartColor>
+		<StartColorVar>32 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>300</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="15" Name="Blizzard Mega Motes Lv5">
+		<Surface>41</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>10000</EmitterDuration>
+		<EmitsPerSec>50</EmitsPerSec>
+		<EmitsPerSecVar>15</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>200</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>200</Speed>
+		<SpeedVar>50</SpeedVar>
+		<AnimationID>36</AnimationID>
+		<StartColor>64 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>-15</Yaw>
+		<YawVar>15</YawVar>
+		<Pitch>45</Pitch>
+		<PitchVar>15</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>45</ForcePitch>
+		<ForceMagnitude>300</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="16" Name="Frostbite">
+		<Surface>9</Surface>
+		<ParticleLimit>100</ParticleLimit>
+		<EmitterDuration>100</EmitterDuration>
+		<EmitsPerSec>100</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>2000</ParticleLife>
+		<ParticleLifeVar>1000</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>96</SpawnDistanceMax>
+		<Speed>25</Speed>
+		<SpeedVar>25</SpeedVar>
+		<AnimationID>40</AnimationID>
+		<StartColor>32 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="17" Name="Solarbeam Motes Lv2">
+		<Surface>52</Surface>
+		<ParticleLimit>50</ParticleLimit>
+		<EmitterDuration>200</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>50</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>750</ParticleLife>
+		<ParticleLifeVar>250</ParticleLifeVar>
+		<SpawnDistanceMin>5</SpawnDistanceMin>
+		<SpawnDistanceMax>25</SpawnDistanceMax>
+		<Speed>10</Speed>
+		<SpeedVar>10</SpeedVar>
+		<AnimationID>46</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="18" Name="Solarbeam Main Lv2">
+		<Surface>52</Surface>
+		<ParticleLimit>100</ParticleLimit>
+		<EmitterDuration>200</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>100</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>0</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>0</Speed>
+		<SpeedVar>0</SpeedVar>
+		<AnimationID>47</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="19" Name="Solarbeam Motes Lv3">
+		<Surface>52</Surface>
+		<ParticleLimit>75</ParticleLimit>
+		<EmitterDuration>200</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>75</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>750</ParticleLife>
+		<ParticleLifeVar>250</ParticleLifeVar>
+		<SpawnDistanceMin>10</SpawnDistanceMin>
+		<SpawnDistanceMax>30</SpawnDistanceMax>
+		<Speed>20</Speed>
+		<SpeedVar>15</SpeedVar>
+		<AnimationID>46</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="20" Name="Solarbeam Main Lv3">
+		<Surface>52</Surface>
+		<ParticleLimit>100</ParticleLimit>
+		<EmitterDuration>200</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>100</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>0</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>0</Speed>
+		<SpeedVar>0</SpeedVar>
+		<AnimationID>49</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="21" Name="Solarbeam Motes Lv4">
+		<Surface>52</Surface>
+		<ParticleLimit>100</ParticleLimit>
+		<EmitterDuration>200</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>100</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>750</ParticleLife>
+		<ParticleLifeVar>250</ParticleLifeVar>
+		<SpawnDistanceMin>15</SpawnDistanceMin>
+		<SpawnDistanceMax>40</SpawnDistanceMax>
+		<Speed>30</Speed>
+		<SpeedVar>20</SpeedVar>
+		<AnimationID>46</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="22" Name="Solarbeam Main Lv4">
+		<Surface>52</Surface>
+		<ParticleLimit>100</ParticleLimit>
+		<EmitterDuration>200</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>100</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>0</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>0</Speed>
+		<SpeedVar>0</SpeedVar>
+		<AnimationID>51</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="23" Name="Solarbeam Motes Lv5">
+		<Surface>52</Surface>
+		<ParticleLimit>150</ParticleLimit>
+		<EmitterDuration>200</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>150</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>750</ParticleLife>
+		<ParticleLifeVar>250</ParticleLifeVar>
+		<SpawnDistanceMin>25</SpawnDistanceMin>
+		<SpawnDistanceMax>50</SpawnDistanceMax>
+		<Speed>40</Speed>
+		<SpeedVar>30</SpeedVar>
+		<AnimationID>46</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="24" Name="Solarbeam Main Lv5">
+		<Surface>52</Surface>
+		<ParticleLimit>100</ParticleLimit>
+		<EmitterDuration>200</EmitterDuration>
+		<EmitsPerSec>1000</EmitsPerSec>
+		<EmitsPerSecVar>0</EmitsPerSecVar>
+		<ParticlesPerEmit>100</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>0</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>0</Speed>
+		<SpeedVar>0</SpeedVar>
+		<AnimationID>53</AnimationID>
+		<StartColor>255 255 255 255</StartColor>
+		<StartColorVar>0 0 0 0</StartColorVar>
+		<EndColor>0 255 255 255</EndColor>
+		<EndColorVar>0 0 0 0</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="25" Name="Prominence Lv3">
+		<Surface>9</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>7500</EmitterDuration>
+		<EmitsPerSec>50</EmitsPerSec>
+		<EmitsPerSecVar>25</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>500</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>0</Speed>
+		<SpeedVar>0</SpeedVar>
+		<AnimationID>55</AnimationID>
+		<StartColor>255 255 255 224</StartColor>
+		<StartColorVar>0 0 0 31</StartColorVar>
+		<EndColor>0 255 255 224</EndColor>
+		<EndColorVar>0 0 0 31</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="26" Name="Prominence Lv4">
+		<Surface>9</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>14500</EmitterDuration>
+		<EmitsPerSec>100</EmitsPerSec>
+		<EmitsPerSecVar>50</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>500</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>0</Speed>
+		<SpeedVar>0</SpeedVar>
+		<AnimationID>55</AnimationID>
+		<StartColor>255 255 255 224</StartColor>
+		<StartColorVar>0 0 0 31</StartColorVar>
+		<EndColor>0 255 255 224</EndColor>
+		<EndColorVar>0 0 0 31</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+	<ParticleEmitter ID="27" Name="Prominence Lv5">
+		<Surface>9</Surface>
+		<ParticleLimit>1000</ParticleLimit>
+		<EmitterDuration>19500</EmitterDuration>
+		<EmitsPerSec>150</EmitsPerSec>
+		<EmitsPerSecVar>75</EmitsPerSecVar>
+		<ParticlesPerEmit>1</ParticlesPerEmit>
+		<ParticlesPerEmitVar>0</ParticlesPerEmitVar>
+		<ParticleLife>1000</ParticleLife>
+		<ParticleLifeVar>500</ParticleLifeVar>
+		<SpawnDistanceMin>0</SpawnDistanceMin>
+		<SpawnDistanceMax>0</SpawnDistanceMax>
+		<Speed>0</Speed>
+		<SpeedVar>0</SpeedVar>
+		<AnimationID>55</AnimationID>
+		<StartColor>255 255 255 224</StartColor>
+		<StartColorVar>0 0 0 31</StartColorVar>
+		<EndColor>0 255 255 224</EndColor>
+		<EndColorVar>0 0 0 31</EndColorVar>
+		<Yaw>0</Yaw>
+		<YawVar>45</YawVar>
+		<Pitch>0</Pitch>
+		<PitchVar>45</PitchVar>
+		<ForceYaw>0</ForceYaw>
+		<ForcePitch>0</ForcePitch>
+		<ForceMagnitude>0</ForceMagnitude>
+		<GravityPos></GravityPos>
+		<GravityMagnitude></GravityMagnitude>
+	</ParticleEmitter>
+</ParticleData>

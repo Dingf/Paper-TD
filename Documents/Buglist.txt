@@ -1,0 +1,70 @@
+Wednesday, May 25, 2011
+---------------------------------------------
+*Upon casting the Singularity spell, towers 
+will attack creeps outside of their range. 
+<FIXED>
+
+
+Saturday, May 28, 2011
+---------------------------------------------
+*Reload only works for the first shot of Snipe,
+and then stops functioning. Works fine for 
+Chain Shot however. Having Point Blank seems
+to fix this problem... <FIXED>
+
+*Snipe Lv5 causes enemies not inside the line
+of fire to get hit. <FIXED>
+
+
+Thursday, June 02, 2011
+---------------------------------------------
+*Massive lag when projectiles from Drop Towers
+explode and form Inkpools. Other than that, it
+works as expected. <FIXED>
+	
+
+Thursday, June 09, 2011
+---------------------------------------------
+*Crash sometimes happens when upgrading to
+the Steam Cannon spell. On debugging, it shows
+that the tower projectile has somehow been
+replaced by a spell. <FIXED>
+
+
+Friday, June 10, 2011
+---------------------------------------------
+*When using a sprite bigger than 32x32px for
+a projectile animation, the projectile merely
+flies to the bottom right of the screen, but
+does not follow its target. <FIXED>
+
+*Time Lapse permanently stuns a creep, but 
+only when not actively debugging. Even creeps
+that have not been hit by it remain stunned
+while the game is still running. <FIXED>
+
+
+Wednesday, June 15, 2011
+---------------------------------------------
+*When using Chronosphere with Water Towers,
+creeps and projectiles remain permanently
+frozen. However, Watch Tower projectiles work
+normally. Also, a combination of both works
+normally. <FIXED>
+
+
+Wednesday, August 3, 2011
+---------------------------------------------
+*The game sometimes crashes when using Wonder.
+Somehow triggered scripts are being deleted
+but not removed. This situation occurs when
+an on kill trigger (Chastity) is mixed with
+Summary Execution. <FIXED>
+
+
+Thusrday, August 4, 2011
+---------------------------------------------
+*When using animations to draw creeps on the
+page, there is a large framerate drop when
+drawing creeps very early. As time passes,
+this framerate drop becomes less noticeable.

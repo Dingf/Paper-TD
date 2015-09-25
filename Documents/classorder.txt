@@ -1,0 +1,14 @@
+Class Order:
+---------------------------------------------
+1. Constructors
+2. Destructors
+3. Simple GET functions
+	*int32>uint32>Float
+	*Other classes
+4. Simple SET functions
+	*See above
+5. Class-specific functions
+6. Inherited functions
+7. Copy();
+8. Clear functions
+9. Unload();

@@ -1,0 +1,223 @@
+
+
+
+
+
+
+	<Spell ID="44" Name="Learn Splash Aura">
+		<Visible>YES</Visible>
+		<Mode>LEARN</Mode>
+		<Level>3</Level>
+		<Prerequisite>35</Prerequisite>
+		<Automatic>NO</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>1000</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey>R</Hotkey>
+		<Text>Grants this tower the Splash Aura ability, which increases the splash radius
+		of all towers within 128px. Does not stack with Splash Aura. Passive ability.\n
+		\n&amp;cffff0000Level 3&amp;cff000000 - 25% increase\n&amp;cffff0000Level 
+		4&amp;cff000000 - 50% increase\n&amp;cffff0000Level 5&amp;cff000000 - 100% increase
+		</Text>
+		<Script>LEARN_SPELL 47;
+		</Script>
+	</Spell>
+	<Spell ID="45" Name="Splash Aura Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		25%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>MOD SELF PROJ_SPLASH_BONUS 25 PERCENT;</Script>
+	</Spell>
+	<Spell ID="46" Name="Splash Aura Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		25%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_SPELL 45 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="47" Name="Splash Aura">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>3</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		25%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_AURA 46 128;</Script>
+	</Spell>
+	<Spell ID="48" Name="Splash Aura Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		50%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>REMOVE_SPELL 45 SELF SELF;
+			MOD SELF PROJ_SPLASH_BONUS 50 PERCENT;
+		</Script>
+	</Spell>
+	<Spell ID="49" Name="Splash Aura Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		50%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_SPELL 48 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="50" Name="Splash Aura">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>4</Level>
+		<Prerequisite>47</Prerequisite>
+		<Automatic>YES</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		50%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_AURA 49 128;</Script>
+	</Spell>
+	<Spell ID="51" Name="Splash Aura Projectile Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		100%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>REMOVE_SPELL 48 SELF SELF;
+			MOD SELF PROJ_SPLASH_BONUS 100 PERCENT;
+		</Script>
+	</Spell>
+	<Spell ID="52" Name="Splash Aura Effect">
+		<Visible>NO</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>NONE</Prerequisite>
+		<Automatic>NO</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		100%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_SPELL 51 TOWER_PROJECTILE TOWER_PROJECTILE;</Script>
+	</Spell>
+	<Spell ID="53" Name="Splash Aura">
+		<Visible>YES</Visible>
+		<Mode>PASSIVE</Mode>
+		<Level>5</Level>
+		<Prerequisite>50</Prerequisite>
+		<Automatic>YES</Automatic>
+		<InkCost>NONE</InkCost>
+		<InkPerSecond>NONE</InkPerSecond>
+		<CastTime>NONE</CastTime>
+		<Cooldown>NONE</Cooldown>
+		<Charges>NONE</Charges>
+		<Duration>NONE</Duration>
+		<Stacking>NO</Stacking>
+		<Animation>NONE</Animation>
+		<Icon>24</Icon>
+		<Hotkey></Hotkey>
+		<Text>Passive ability. Increases the splash radius of all towers within 128px by 
+		100%. Does not affect the inherent splash radius of projectiles.
+		</Text>
+		<Script>APPLY_AURA 52 128;</Script>
+	</Spell>
